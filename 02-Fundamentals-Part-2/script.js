@@ -34,3 +34,17 @@ console.log(appleOrange.juice);
 
 
 //**** Functions Declearation ****//
+
+const age1 = calcAge1(2004);
+
+function calcAge1(birthYear){
+    return 2025 - birthYear
+}
+
+//function expression
+const calcAge2 = function (birthYear){
+    retrun 2025 - birthYear 
+}
+const age2 = calcAge2(2004);
+console.log(age1, age2);
+
