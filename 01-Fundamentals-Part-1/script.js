@@ -411,4 +411,32 @@ console.log('I'm ${2025 - 2004} years old ${me}');
 
 
 
-    
+    //***Conditional (Ternary) Operator ***//
+
+    const_Age = 23;
+    // age >= 18 ? console.log('I like to drink wine') : console.log('I like to drink water ');
+
+    const drink = Age >= 18 ? 'wine' : 'water' ;
+    console.log(drink);
+
+    let drink2;
+    if(_Age >= 18 ){
+        drink2 = 'wine';
+    } else {
+        drink2 = 'water';
+    }
+    console.log(drink2);
+
+    console'log('I like to drink ${Age >= 18 ? 'wine' : 'water'}');
+
+
+    // challenges - 4 //
+
+    const bill = 430;
+    const tip = bill <= 300 && bill >= 50 ? bill *0.15 : bill * 0.2 ;
+    console.log('The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}');
+
+
+
+
+                                //*****Fundamental 01 Completed *****//
