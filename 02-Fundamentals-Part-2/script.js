@@ -43,8 +43,23 @@ function calcAge1(birthYear){
 
 //function expression
 const calcAge2 = function (birthYear){
-    retrun 2025 - birthYear 
+    return 2025 - birthYear 
 }
 const age2 = calcAge2(2004);
 console.log(age1, age2);
 
+
+
+//*****Arrow functions *****//const calAge3 = birthYear => 2025 - birthYear;
+const age3 = calcAge3(2025);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear , firstName) => {
+    const age = 2025 - birthYear ;
+    const retirement = 65 - age;
+    // return retirement ;
+    return'$(firstName) retires in ${retirement} years ';
+}
+
+console.log(yearsUntilRetirement(2005 , 'Shanaya'));
+console.log(yearsUntilRetirement(2004, 'adii'));
