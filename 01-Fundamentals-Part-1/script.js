@@ -376,6 +376,20 @@ if(hasDriversLicence && hasGoodVision){
          default:
             console.log('Not a valid day!');
 }
+          if (day === 'monday') {
+            console.log('Plan Your schedule');
+            console.log('Arrange a meetup');
+          } else if (day === 'tuesday') {
+            console.log('Prepare for your work');
+          } else if (day === 'wednesday' || day ==='thursday'){
+            console.log('Write solutions');
+          } else if ('Record Your Datas');
+          } else if (day ==='saturday' || day === 'sunday') {
+            console.log('Enjoy the weekend :D');
+          } else {
+            console.log('Not a valid day!');
+          }
+        
     
     //**** The conditional ****//
 
@@ -384,7 +398,16 @@ if(hasDriversLicence && hasGoodVision){
     );
     
 
+// statement and expressions //
+3 + 4
+1991
+true && false && !false
 
+if(23>10) {
+    const str = '23 is bigger ';
+}
+const me = 'Shanaya';
+console.log('I'm ${2025-2004} years old ${me}');
     
 
 
