@@ -407,11 +407,8 @@ if(23>10) {
     const str = '23 is bigger ';
 }
 const me = 'Shanaya';
-console.log('I'm ${2025-2004} years old ${me}');
+console.log('I'm ${2025 - 2004} years old ${me}');
+
+
+
     
-
-
-
-
-
-
