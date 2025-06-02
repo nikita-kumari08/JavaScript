@@ -145,5 +145,163 @@ checkWinner(scoreDolphins, scoreKoalas);
 //**** ARRAY ****//
 
 
+
+
 const friend1 = 'adii';
-const friend2 = 'shanaya';
+const friend2 = 'cutu';
+const friend3 = 'shanaya';  //More actions
+
+const friends = [adii', 'cutu', 'shanaya'];
+console.log(friends);
+
+const years = new Array(1996, 2001, 2005);
+console.log(years);
+
+console.log(friends.length);
+console.log(friends[friends.length -1]);
+
+friends[2] = 'fineshyt';
+console.log(friends)
+
+const firstName = 'cutu';
+const shanaya = [firstName, 'kokiee', 2025-2005, 'Student', friends ];
+console.log(shanaya).length);
+
+//*** Exercise ***//
+
+
+const calcAge = function (birthYear) {
+    return 2025-2000;
+}
+
+const year = [1900, 1996, 2000, 2005, 2010] ;
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length -1]);
+console.log(age1, age2, age3);
+const age = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length -1])];
+console.log(age);
+
+
+//*** Add elements ***//
+
+
+const friends = ['zoiii', 'kiki', 'mimi'];
+const newLength = friends.push('Cutu');
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('kiki');
+console.log(friends);
+
+//**** Remove elements ****//
+
+
+friends.pop(); //last
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift(friends.indexOf('kiki'));
+friends.shift(friends.indexOf(mimi'));
+
+friends.push(23);
+console.log(friends.includes('mimi'));
+console.log(friends.includes(kiki'));
+console.log(friends.includes('23'));
+
+if (friends.includes('pokkie')) {
+    console.log('You have a friend called pokkie');
+}
+
+
+//**** Challenge - 2 ****//  
+
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(bills, tips, totals);
+
+
+//***  OBJECTS ***//
+
+//*** DOT vs BRACKET NOTATION ***
+const adii = {
+    firstName: 'adii',
+    lastName: 'roy',
+    age: 2025-2005,
+    profession: 'Student',
+    friends: ['adii', 'mimi', 'kiki']
+};
+console.log(adii);
+
+console.log(adii.lastName);
+console.log(adii['lastName']);
+
+const nameKey = 'Name';
+console.log(adii['firstName' + nameKey]);
+console.log(adii['lastName' + nameKey]);
+
+//console.log(adii.'last' + nameKey) --> Wrong way
+
+const interestedIn = prompt('What do you whant to know about adii? Choose between firstName, lastName, age, profession, and friends');
+
+if (adii[interestedIn]) {
+    console.log(adii[interestedIn]);
+}else{
+    console.log('Wrong request! Choose between firstName, lastName, age, profession, and friends');
+}
+adii.location = 'masratu';
+adii['email'] = 'adiiiroyy0804@gmail.com';
+console.log(adii);
+
+
+// *** Challenge --> "adii has 3 friends, and his best friend is called kiki"Add commentMore actions
+
+
+console.log(`${adii.firstName} has ${adii.friends.length} friends, and his best friend is called ${adii.friends[1]}`);
+console.log(`${adii.firstName} has ${adii.friends.length} friends, and his best friend is called ${adii.friends[1]}`);
+
+
+//*** OBJECT METHODS ***//
+
+const jonas = {
+  firstName: 'adii',
+  lastName: 'roy',
+  birthYeah: 2000,
+  profession: 'Student',
+  friends: ['cutu', 'kiki','mimi'],
+  hasDrivingLicense: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // }
+
+  // calcAge: function () {
+  //   // console.log(this);
+  //   return 2037 - this.birthYear;
+  // }
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${adii.profession}, and he has ${this.hasDrivingLicense ? 'a' : 'no'} driving license.`
+  }
+};
+
+console.log(adii.calcAge());
+
+console.log(adii.age);
+console.log(adii.age);
+console.log(adii.age);
