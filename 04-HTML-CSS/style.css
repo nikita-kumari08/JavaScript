@@ -1,12 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: bprder-box;
+
+
+}
+
+
+
 body {
+
     background-color: rgb(253, 253, 246);
     font-family: Arial;
     font-size: 20px;
+    padding: 50px;
 }
 
 h1 {
     font-size: 40px;
+    margin-bottom: 25px;
     
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: centre ;
 }
 
 .first {
@@ -16,4 +34,23 @@ h1 {
 #your-name {
     background-color: rgb(236, 236, 103);
     border: 5px solid #6c1515;
+    width: 400px;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+input,
+button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+a {
+    background-color: yellowgreen;
+}
+
+
+#your-name h2 {
+    color: olivedrab;
+    
 }
