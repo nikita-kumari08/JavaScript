@@ -120,7 +120,7 @@ const flights =
 
 const restaurant = {
   Name: 'Classico Italiano',
-@@ -83,6 +84,7 @@
+ -83,6 +84,7 
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 }
@@ -128,7 +128,7 @@ const restaurant = {
   openingHours: {
     thu: {
       open: 12,
-@@ -131,4 +133,37 @@
+-131,4 +133,37 
     }}
 
 // Nested objects
