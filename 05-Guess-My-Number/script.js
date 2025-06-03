@@ -33,7 +33,7 @@ document.querySelector('.check').addEventListener
 
 
 });
-
+                                         //** challenge - 1 ***//
 
 
     let secretNumber = Math.trunc(Math.random() * 20 ) + 1;
