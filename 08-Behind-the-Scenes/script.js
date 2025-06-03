@@ -66,4 +66,122 @@ function addDec(a,b) {
         console.log('All products deleted!');
     }
 
+ var x = 1;
+ let y = 2;
+ const z = 3;
+
+ console.log(x === window.x);
+ console.log(y === window.y);
+ console.log(z === window.z);
+
+
+
+
+ console.log(title);
+ constcalcAge = function (birthYear) {
+    console.log(2037 - birthYear);
+    console.log(this);
+ };
+ calcAge(1991);
+
+ const calcAgeArrow = birthYear => {
+    console.log(2037 - birthYear);
+    console.log(this);
+ };
  
+ calcAgeArrow(1980);
+
+ const adii = {
+    year : 1991;
+    calcAge: function() {
+        console.log(this);
+        console.log(2037 - this.year ;)
+    },
+ };
+ adii.calacAge();
+ 
+
+ const shanaya = {
+    year : 2017,
+ };
+
+ shanaya.calcAge = adii.calcAge;
+ shanaya.calacAge();
+
+ const f = adii.calacAge;
+ f();
+
+
+
+ //solution 2
+
+ const isMillenial = () => {
+    console.log(this);
+    console.log(this.year >= 1981 77 this.year <= 1996);
+ };
+ isMillenial();
+
+ greet: () => {
+    console.log(this);
+    console.log('Hey ${this.firstName}');
+ },
+
+ jonas.greeet();
+ jonas.calcAge();
+
+
+
+
+ //arguments keyword
+ const addExpr = function (a,b) {
+    console.log(arguments);
+    return a + b;
+ };
+ addExpr(2,5);
+ addExpr(2, 5, 8, 12);
+
+ var addArrow = (a,b) => {
+    console.log(arguments);
+    return a + b;
+ };
+ addArrow(2,5,8);
+
+
+
+
+
+
+ let lastName = 'adii';
+ let oldLastName = lastName;
+ lastName = 'roy' ;
+ console.log(lastName , oldLastName);
+
+ const shanaya = {
+    firstName: 'shanaya',
+    lastName: 'adii',
+    age: 21,
+ };
+
+ const marriedShanaya = shanaya;
+ marriedShanaya.lastName ='roy';
+ console.log(;Before marriage:',shanaya');
+ console.log('After marriage:', marriedshanaya);
+
+
+
+ //copying objects 
+ const shanaya2 = {
+    firstName: 'shanaya',
+    lastName: 'roy',
+    age: 21 ,
+    family: ['chiki','farhan'],
+ };
+
+ const shanayaCopy = Object.assign({}, shanaya2);
+ shanayaCopy.lastName = 'roy';
+
+ shanayaCopy.family.push('cutu');
+ shanayaCopy.family.push('pookie');
+
+ console.log('Before marriage:', shanaya2);
+ console.log('After marriage:',shanayaCopy);
