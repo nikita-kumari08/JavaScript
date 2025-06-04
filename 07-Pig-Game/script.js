@@ -35,3 +35,5 @@ diceE1.src = 'dice -${dice}.png';
         // Switch to next player
     }
 });
+
+         // project 3 done //
