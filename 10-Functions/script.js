@@ -25,3 +25,67 @@ createBooking('LH123', 5);
 
 
 createBooking('LH123', undefined, 1000);
+
+const flight = 'LH234';
+const adii = {
+    namme: 'Adii Roy',
+    passport: 24739479284
+}
+
+const checkIn = function( flightNum, passenger) {
+flightNum = 'LH999';
+passenger.name = 'Mr', + passenger.name;
+if(passeneger.passport === 24739479284) {
+    alert('Checked in')
+} else {
+    alert('Wrong passport!')
+}
+};
+checkIn(flight, adii);
+console.log(flight);
+console.log(adii);
+
+//Is the same as doing
+
+const flightNum = flight ;
+const passenger = adii;
+
+
+
+const newPassport = function(person) {
+    person.passport = Math.trunc(Math.random()* 1000000000);
+}; 
+
+newPassport(adii);
+checkIn(flight.adii);
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
