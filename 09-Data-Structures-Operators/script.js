@@ -163,9 +163,26 @@ console.log(letters);
 console.log(...str);
 // console.log(`${...str} roy`); 
 
-cost ingredients = [
+const ingredients = [
   prompt('Let's make maggi! ingredients 1?),
   prompt('Ingredients 2?'),
   prompt('Ingredients 3?'),
 ];
 console.log(ingredients);
+
+
+
+if(restaurant.openinghours && restaurant.openingHours.mon)
+  console.log(restaurant.openingHours.mon.open);
+
+  //console.log(restaurant.openingHours.mon.open);
+
+  //With optional chaining 
+
+  console.log(restaurant.openingHours.mon.open);
+  console.log(restaurant.openingHours.mon.open);
+
+
+
+  // The for-of Loop
+  
