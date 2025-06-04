@@ -422,7 +422,7 @@ const menu = [...restaurant.starterMenu, ...
                   ],
                   [
                     'asif',
-                    'asifscutie',
+                    'kaisher',
                     'swecha',
                     'prince',
                     'frhan',
