@@ -59,14 +59,59 @@ const newPassport = function(person) {
 newPassport(adii);
 checkIn(flight.adii);
 
+const oneword = function(str) {
+    return str.replace( /  /g, '').toLowerCase();
+};
+
+
+//Higher- order function
+
+const transformer = function(str, fn) {
+    console.log('Original string: ${str}');
+    console.log('Transformed strings: ${fn(str)}');
+
+    console.log('Transformed by: ${fn.name}');
+};
     
+transformer('JavaScript is the best!', upperFirstWord)
+;
+transformer('Javascript is the best!', oneword);
 
 
 
+// JS uses callbacks all the time
+
+const high5 = function() {
+    console.log() ;
+
+}
+
+document.body.addEventListener('click', high5);
+
+
+/// important lecture /part of js
 
 
 
+const greet = function(greeting) {
+    return function(name){
+        console.log('${greeting} ${name}');
+    }
+}
 
+
+
+const greeterHey = greet('Hey');
+greeterHey('adii');
+greeterHey('shanaya');
+
+greet('Hello')('adii');
+
+
+//challenge
+const greetArr = greeting => name => console.log('${greeting}. ${name}');
+
+greetArr('Hi')('adii');
 
 
 
