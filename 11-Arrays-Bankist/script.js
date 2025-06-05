@@ -671,7 +671,12 @@ arr.fill(23, 4, 6);
 console.log(arr);
 
 
+// array.from 
+Array.from({length: 7}, () => 1);
+console.log(y);
 
+const z = Array.from({length: 7}, ( _ , i) => i + 1);
+console.log(z);
 
 
 
