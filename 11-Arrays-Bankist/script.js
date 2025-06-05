@@ -839,7 +839,7 @@ dogs.forEach(dog => (dog.recFood = Math.trunc(dog.
 
     console.log(dogs.some(checkEatOkay));
 
-
+ 
 
     // 7 - 
 
@@ -858,7 +858,7 @@ dogs.forEach(dog => (dog.recFood = Math.trunc(dog.
 
 
 
-
+   /////// **** completed ****////
 
 
 
