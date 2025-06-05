@@ -680,6 +680,20 @@ console.log(z);
 
 
 
+labelBalance.addEventListener.listener('click', function (){
+const movementsUI = Array.from(
+  document.querySelectorAll ('.movement __value'),
+  (el => Number(el,textContent.replace(''))))
+
+console.log(movementsUI);
+
+  
+const movementUI2 = [... document.querySelectorAll
+     ('.movement __value')]
+ 
+});
+
+
 
 
 
