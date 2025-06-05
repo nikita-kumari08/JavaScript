@@ -209,7 +209,7 @@ currenciesUnique.forEach(function(value, _, map){
 
                                   // challenge - 1 //
 
-                                  
+
 const checkDogs = function (dogsJulie,dogskate) {
   const dogsJulieCorrected = dogsJulie.slice();
   dogsJulieCorrected.splice(-2);
@@ -229,16 +229,33 @@ const checkDogs = function (dogsJulie,dogskate) {
   });
 };
 
-// checkdogs
+const eurToUsd = 1.1;
+
+//const movemenetsUSD = movements.map(function(mov){
+  return mov * eurToUsd;
+});
+
+const movemenstsUSD = movements.map(mov => mov *
+  eurToUSD);
+
+console.log(movements);
+console.log(movementsUSD);
+
+const movementsUSDfor = [];
+for (const mov of movements) movementsUSDfor.push(mov
+  * eurToUSD);
+  console.log(movementsUSDfor);
 
 
-
-
-
-
-
-
-
+  const movementDescriptions = movements.map
+  (mov, i,) =>  {
+    'Movement ${ i + 1}: You ${mov > 0 ? 'deposited':
+    'withdrew'} ${Math.abs(
+      mov
+    )}'
+    };
+  
+    console.log(movementsDescriptions);
 
 
 
