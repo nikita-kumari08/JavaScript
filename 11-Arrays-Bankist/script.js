@@ -196,6 +196,51 @@ currentAccount.owner.split('') [0]
       updateUI(currentAccount);
     }
   });
+  btnClose.addEventListener('click',function (e) {
+    e.preventDefault();
+
+
+const amount = Number(inputLoanAmount.value);
+
+
+if (amount > 0 && currentAccount.movements.some(mov
+  => mov >= amount * 0.1 ){
+
+    // add movement 
+    currentAccount.movements.push(amount);
+
+    //update ui
+    updateUI(currentAccount);
+  }
+  });
+
+
+
+
+
+    if (
+      inputCloseUsername.value === currentAccount.username &&
+      Number(inputClosePin.value) === currentAccount.pin
+    ) {
+       const index = accounts.findIndex(
+        acc => acc.username === currentAccount.username
+       );
+
+      console.log(index);
+      //.indexOf'(23)
+
+
+      // Delete account 
+      accounts.splice (index, 1);
+
+      //Hide ui
+      containerApp.style.opacity = 100;
+    }
+
+    inputCloseUsername.value = inputClosePin.value = '';
+  });
+
+
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
@@ -524,20 +569,51 @@ const avg1 = calcAverageHumanAge ([16, 6, 10, 5, 6, 1,
   
 
 
+     // some and every array
+
+     console.log(movements);
+
+     //equality
+     console.log(movements.includes(-130));
 
 
-    // Implementing login
+     //condition
+     console.log(movements.some(mov => mov === -130));
+
+     const anyDeposits = movements.some(mov => mov > 0);
+     console.log(anyDeposits);
+
+
+
+//every 
+console.log(movements.every(mov => mov > 0));
+console.log(account4.movements.every(mov => mov > 0));
+
+
+// separate callback
+const deposit = mov => mov < 0;
+console.log(movement.some(deposit));
+console.log(movement.every(deposit));
+console.log(movement.filter(deposit));
+
+const arr = [[1, 2, 3], [4, 5, 6],7 8];
+console.log(arr.flat());
+
+const arrDeep = [[[1,2], 3], [4, [5,6]],7, 8];
+console.log(arrDeep.flat(2));
+
+
+// flatmap
+const overBalance = accounts
+.map(acc => acc.movements)
+.flat()
+.reduce((acc, mov) => acc + mov, 0);
+console.log(overalBalance2);
 
 
 
 
-
-
-
-
-
-
-
+// sorting array
 
 
 
