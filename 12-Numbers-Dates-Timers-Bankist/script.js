@@ -266,10 +266,14 @@ console.log(0.1 + 0.2);
 console.log(0.1 + 0.2 == 0.3);
 
 // Conversion
+
+
 console.log(Number(23));
 console.log(+'23');
 
 // Parsing
+
+
 console.log(Number.parseInt('30px', 10));
 console.log(Number.parseInt('e23', 10));
 
@@ -278,12 +282,14 @@ console.log(Number.parseFloat(' 2.5rem '));
 //console.log(parseFloat('2.5rem'));
 
 // Check if value is NaN
+
 console.log(Number.isNaN(20));
 console.log(Number.isNaN('20'));
 console.log(Number.isNaN(+'20X'));
 console.log(Number.isNaN(23 / 0));
 
 // Checking if value is number
+
 console.log(Number.isFinite(20));
 console.log(Number.isFinite('20'));
 console.log(Number.isFinite(+'20'));
@@ -294,7 +300,7 @@ console.log(Number.isInteger(23.0));
 console.log(Number.isInteger(23 / 0));
 
 
-//------------------------------------------------------------------------------------------------//
+
 
 // MATH AND ROUNDING
 
@@ -319,6 +325,8 @@ console.log(randomInt(10, 20));
 console.log(randomInt(0, 3));
 
 // Rounding integers
+
+
 console.log(Math.round(23.3));  //23
 console.log(Math.round(23.9));  //24
 
@@ -334,15 +342,17 @@ console.log(Math.trunc(-23.3));   //23
 console.log(Math.floor(-23.3));   //24
 
 // Rounding decimals
+
 console.log((2.7).toFixed(0));  //0
 console.log((2.7).toFixed(3));  //2.700
 console.log((2.345).toFixed(2));  //2.35
 console.log(+(2.345).toFixed(2));  //2.35
 
 
-//-------------------------------------------------------------------------------------------------------------------------------------------//
 
 // THE REMINDER OPERATOR
+
+
 console.log(5 % 2);
 console.log(5 / 2); // 5 = 2 * 2 + 1
 
@@ -370,7 +380,7 @@ labelBalance.addEventListener('click', function () {
 });
 
 
-//---------------------------
+
 // NUMERIC SEPARATORS
 
 // 287,460,000,000
@@ -389,10 +399,10 @@ console.log(PI);
 console.log(Number('230_000'));
 console.log(parseInt('230_000'));
 
-//--------------------------------------------------------------------------------------------------------------------------------------------//
 
 
 // Working with BigInt
+
 console.log(2 ** 53 - 1);
 console.log(Number.MAX_SAFE_INTEGER);
 console.log(2 ** 53 + 1);
@@ -404,6 +414,7 @@ console.log(4838430248342043823408394839483204n);
 console.log(BigInt(48384302));
 
 // Operations
+
 console.log(10000n + 10000n);
 console.log(36286372637263726376237263726372632n * 10000000n);
 // console.log(Math.sqrt(16n));
@@ -413,6 +424,7 @@ const num = 23;
 console.log(huge * BigInt(num));
 
 // Exceptions
+
 console.log(20n > 15);
 console.log(20n === 20);
 console.log(typeof 20n);
@@ -421,10 +433,10 @@ console.log(20n == '20');
 console.log(huge + ' is REALLY big!!!');
 
 // Divisions
+
 console.log(11n / 3n);
 console.log(10 / 3);
 
-//-----------------------------------------------------------------------------------------------------//
 
 
 // CREATING DATES
