@@ -62,9 +62,14 @@ const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
 
-const displayMovements = function(movements) {
+const displayMovements = function(movements, sort = false) {
   containerApp.Movements.innerHTML = '';
   // .textcontent = 0
+
+  const movs = sort? movements.slice().sort((a, b)
+=> a - b) ; movements;
+
+
 movements.forEach function(mov, i){
   const type =  mov > 0 ? 'deposit' : 'withdrawal';
 
@@ -239,6 +244,13 @@ if (amount > 0 && currentAccount.movements.some(mov
 
     inputCloseUsername.value = inputClosePin.value = '';
   });
+
+btnSort.addEventListener('click', function(e) {
+  e.preventDefault();
+  displayMovements(currentAccount.movements, !sorted);
+  sorted = !sorted;
+}
+)
 
 
 
@@ -614,11 +626,49 @@ console.log(overalBalance2);
 
 
 // sorting array
+const owners = ['adii', 'shanaya', 'chiiki', 'farhan'];
+console.log(owners.sort());
+console.log(owners);
+
+//numbers
+console.log(movements);
+
+//return < 0, A, B (keep order)
+//return > 0, B, A (switch order)
+
+//ascending 
+movements.sort((a,b) => {
+  if (a>b) return 1;
+  if (b<a) return -1;
+});
+console.log(movements);
+
+//descending
+movements.sort((a,b) => {
+  if (a>b) return -1;
+  if (b<a) return 1;
+});
+movement.sort((a,b) => b - a);
+console.log(movements);
 
 
 
 
+// more ways of creating and filling array
 
+console.log([1, 2, 3, 4, 5, 6, 7]);
+console.log(new Array(1, 2, 3, 4, 5, 6, 7));
+
+// empty arrays + fill method
+const x = new Array(7);
+console.log(x);
+console.log(x.map(() =>5));
+//x.fill(1);
+x.fill(1, 3, 5);
+console.log(x);
+
+arr.fill(23, 4, 6);
+console.log(arr);
 
 
 
