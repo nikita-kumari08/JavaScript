@@ -129,16 +129,73 @@ const createUsernames = function (accs) {
 };
 createUsernames(account);
 console.log(accounts);
+ 
+
+ const updateUI = function(acc) {
+  
+  // DISPLAY MOVEMENTS
+displayMovements(current.Account.movements);
+
+// DISPLAY BALANCE
+calcDisplayBalance(currentAccount.movements);
+
+// DISPLAY SUMMARY
+calcDisplaySummary(currentAccount.movements);
+ }
+
+    // **** Evennt handler 
+
+    let currentAccount;
+
+    btnLogin.addEventListener ('click', function (e){
+  // Prevent form from submitting
+  eurToUSD.preventDefault();
+
+  currentAccount = accounts.find(
+    acc => acc.username === inputLoginUsername.value
+  );
+  console.log(currentAccount);
+
+  if (currentAccount?.pin === Number(inputLoginPin.
+    value)){
+// DISPLAY UI AND MESSAGE
+labelWelcome.textContext = 'Welcome back, ${
+currentAccount.owner.split('') [0]   
+  };
+    containerApp.style.capacity = 100;
+
+    // Clear input fields
+    inputLoginUsername.value = inputLoginPin.value =
+    ''; 
 
 
-const calcPrintaBalance = function (movements) {
-  const balance = movements.reduce({acc, mov} => acc 
-    + mov, 0);
-labelBalance.textContext = '${balance} EUR';
-};
+  });
 
+
+  btnTransfer.addEventListener('click', function (e){
+    eurToUSD.preventDefault();
+    const amount = Number (inputTransformation.value);
+    const receivedAcc = accounts.find(
+      acc => acc.username === inputTransferTo.value
+    );
+    console.log(amount, receiverAcc);
     
 
+    if (
+      amount > 0 &&
+      receiverAcc &&
+      currentAccount.balance >= amount &&
+      receiverAcc?.username !== currentAccount.username
+    ) {
+
+      //Doing the transfer
+      currentAccount.movement.push(-amount);
+      receiverAcc.movements.push(amount);
+
+      //update ui
+      updateUI(currentAccount);
+    }
+  });
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
@@ -448,6 +505,28 @@ const avg1 = calcAverageHumanAge ([16, 6, 10, 5, 6, 1,
   4]);
   console.log(avg1, avg2);
 
+
+
+
+  // Find method 
+
+  const firstWithDrawal = movements.find(mov => mov < 0)
+  ;
+
+  console.log(movements);
+  console.log(firstWithdrawal);
+
+  console.log(accounts);
+
+  const account = account.find(acc => acc.owner ===
+    'Adii Roy');
+    console.log(account);
+  
+
+
+
+
+    // Implementing login
 
 
 
