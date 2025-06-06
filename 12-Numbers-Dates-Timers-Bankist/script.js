@@ -628,7 +628,7 @@ console.log(future);
 
 // Operations With Date
 
-const future = new Date(2037, 10, 19, 15, 23);
+const f = new Date(2037, 10, 19, 15, 23);
 console.log(+future);
 
 const calcDaysPassed = (date1, date2) =>
@@ -642,7 +642,7 @@ console.log(days1);
 // Internationalizing Dates
 
 
-const num = 3884764.23;
+const number = 3884764.23;
 
 const options = {
   style: 'currency',
@@ -678,9 +678,11 @@ console.log('Waiting...');
 
 if (ingredients.includes('spinach')) clearTimeout(pizzaTimer);
 
-// setInterval
+// setinterval
 
 setInterval(function () {
   const now = new Date();
   console.log(now);
 }, 1000);
+                                   
+                                                //***  completed ***//
