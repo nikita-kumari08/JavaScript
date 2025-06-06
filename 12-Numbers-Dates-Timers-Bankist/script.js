@@ -53,6 +53,8 @@ const accounts = [account1, account2];
 
 /////////////////////////////////////////////////
 // Elements
+
+
 const labelWelcome = document.querySelector('.welcome');
 const labelDate = document.querySelector('.date');
 const labelBalance = document.querySelector('.balance__value');
@@ -79,7 +81,9 @@ const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
 /////////////////////////////////////////////////
+
 // Functions
+
 
 const displayMovements = function (movements, sort = false) {
   containerMovements.innerHTML = '';
@@ -152,11 +156,15 @@ const updateUI = function (acc) {
 };
 
 ///////////////////////////////////////
+
 // Event handlers
+
 let currentAccount;
 
 btnLogin.addEventListener('click', function (e) {
+
   // Prevent form from submitting
+
   e.preventDefault();
 
   currentAccount = accounts.find(
@@ -172,10 +180,12 @@ btnLogin.addEventListener('click', function (e) {
     containerApp.style.opacity = 100;
 
     // Clear input fields
+
     inputLoginUsername.value = inputLoginPin.value = '';
     inputLoginPin.blur();
 
     // Update UI
+
     updateUI(currentAccount);
   }
 });
@@ -195,10 +205,12 @@ btnTransfer.addEventListener('click', function (e) {
     receiverAcc?.username !== currentAccount.username
   ) {
     // Doing the transfer
+
     currentAccount.movements.push(-amount);
     receiverAcc.movements.push(amount);
 
     // Update UI
+
     updateUI(currentAccount);
   }
 });
@@ -209,10 +221,14 @@ btnLoan.addEventListener('click', function (e) {
   const amount = Number(inputLoanAmount.value);
 
   if (amount > 0 && currentAccount.movements.some(mov => mov >= amount * 0.1)) {
+
+    
     // Add movement
+
     currentAccount.movements.push(amount);
 
     // Update UI
+
     updateUI(currentAccount);
   }
   inputLoanAmount.value = '';
@@ -232,9 +248,11 @@ btnClose.addEventListener('click', function (e) {
     // .indexOf(23)
 
     // Delete account
+
     accounts.splice(index, 1);
 
     // Hide UI
+
     containerApp.style.opacity = 0;
   }
 
@@ -255,7 +273,7 @@ btnSort.addEventListener('click', function (e) {
 
 
 
- //CONVERTING AND CHECKING NUMBERS
+ // **CONVERTING AND CHECKING NUMBERS
 
  
 console.log(23 == 23.0);
@@ -302,7 +320,7 @@ console.log(Number.isInteger(23 / 0));
 
 
 
-// MATH AND ROUNDING
+// math and rounding
 
 
 console.log(Math.sqrt(25));
@@ -350,7 +368,7 @@ console.log(+(2.345).toFixed(2));  //2.35
 
 
 
-// THE REMINDER OPERATOR
+// The reminder operator
 
 
 console.log(5 % 2);
@@ -381,7 +399,7 @@ labelBalance.addEventListener('click', function () {
 
 
 
-// NUMERIC SEPARATORS
+// mumeric separators
 
 // 287,460,000,000
 const diameter = 287_460_000_000;
