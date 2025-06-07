@@ -41,8 +41,7 @@ console.log(document.head);
 console.log(document.body);
 
 const header = document.querySelector('.header');
-const allSelection = document.querySelectorAll('.
-section');
+const allSelection = document.querySelectorAll('.section');
 console.log(allSelections);
 
 
@@ -63,8 +62,8 @@ message.classList.add('cookie-messsage');
 //message.textContext = 'We use cookie for improved
 //  functionality and analytics';
 message.innerHTML = 
-'we use cookied for improved functonality and
- analytics. <button class =" 
+'we use cookied for improved functonality and 
+analytics. <button class =" 
 btn--close--cookie">Got it!<button>';
 
 headers.prepend (message);
