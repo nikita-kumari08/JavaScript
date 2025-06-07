@@ -355,7 +355,7 @@ imgTargets.forEach(img => imgObserver.observe(img));
 
   dotContainer.addEventListener('click', function (e) {
     if (e.target.classList.contains('dots__dot')) {
-      // BUG in v2: This way, we're not keeping track of the current slide when clicking on a slide
+      // bug in v2: This way, we're not keeping track of the current slide when clicking on a slide
       // const { slide } = e.target.dataset;
 
       curSlide = Number(e.target.dataset.slide);
