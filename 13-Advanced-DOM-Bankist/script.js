@@ -344,7 +344,7 @@ imgTargets.forEach(img => imgObserver.observe(img));
   init();
 
   // Event handlers
-  
+
   btnRight.addEventListener('click', nextSlide);
   btnLeft.addEventListener('click', prevSlide);
 
@@ -368,18 +368,3 @@ imgTargets.forEach(img => imgObserver.observe(img));
 slider();
 
 
-// Lifecycle DOM Events
-
-document.addEventListener('DOMContentLoaded', function (e) {
-  console.log('HTML parsed and DOM tree built!', e);
-});
-
-window.addEventListener('load', function (e) {
-  console.log('Page fully loaded', e);
-});
-
-window.addEventListener('beforeunload', function (e) {
-  e.preventDefault();
-  console.log(e);
-  e.returnValue = '';
-});
