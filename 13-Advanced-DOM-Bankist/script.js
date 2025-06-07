@@ -368,7 +368,7 @@ imgTargets.forEach(img => imgObserver.observe(img));
 slider();
 
 
-// Lifecycle dom events
+// lifecycle dom events
 
 document.addEventListener('DOMContentLoaded', function (e) {
   console.log('HTML parsed and DOM tree built!', e);
