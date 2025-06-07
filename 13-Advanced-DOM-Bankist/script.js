@@ -135,7 +135,7 @@ logo.className = 'Jonas';
 
 
 const btnScrollTo = document.querySelector('.
-  btn--scroll-to');
+   btn--scroll-to');
   const section1 = document.querySelector('#section--1')
   ;
 
@@ -178,7 +178,7 @@ section1.scrollIntoView({behaviour: 'smooth'});
 
 // types of event  
 
-const h1 = document.querySelector('h1');More actions
+const h1 = document.querySelector('h1');
 
 const alertH1 = function (e) {
   alert('addEventListener: Great! You are reading the heading :D');
