@@ -63,9 +63,7 @@ message.classList.add('cookie-messsage');
 //message.textContext = 'We use cookie for improved
 //  functionality and analytics';
 message.innerHTML = 
-'we use cookied for improved functonality and 
-analytics. <button class =" 
-btn--close--cookie">Got it!<button>';
+'we use cookied for improved functonality and analytics. <button class =" btn--close--cookie">Got it!<button>';
 
 headers.prepend (message);
 header.append(message);
@@ -134,8 +132,7 @@ logo.classList.contains('c'); //not includes
 logo.className = 'Jonas';
 
 
-const btnScrollTo = document.querySelector('.
-   btn--scroll-to');
+const btnScrollTo = document.querySelector('.btn--scroll-to');
   const section1 = document.querySelector('#section--1')
   ;
 
