@@ -135,7 +135,7 @@ class PersonCL = class {}
 
 //class declaration 
 class PersonCL {
-    constructor(firstName, birthYear) {
+    constructor(fullName, birthYear) {
         this.firstName = firstName;
         this.birthYear = birthYear; 
     }
@@ -149,9 +149,20 @@ get age() {
     return 2037 - this.birthYear;
 }
 
+
+// set a property with already exists
+set fullName(name){
+    console.log(name);
+    if(name.includes('')) this.fullName = name;
+    else alert (`${name} is not a full name!`);}
+} 
+ get fullName() {
+    return this._fullName;
+
 }
 
-const Adii = new PersonCL('Adii', 2004);
+
+const Adii = new PersonCL('Adii Roy', 2004);
 console.log(adii);
 adii.calcAge();
 console.log(adii.age);
@@ -169,7 +180,9 @@ adii.greet();
 // 2. classes are first-class citizens
 // 3. classes are executed in strict mode 
 
+   
 
+const cutu = new Person ('Cutu roy', 2004)
 
 // setters and gretters 
 
