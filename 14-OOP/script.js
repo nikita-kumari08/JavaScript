@@ -219,7 +219,26 @@ const PersonProto ={
     calcAge(){
         console.log(2037 - this.birthYear);
     },
-}
+
+
+    init(firstName, birthYear) {
+        this.firstNmad = firstName;
+        this.birthYear = birthYear;
+    },
+};
+
+const megha = Object.create(PersonProto);
+console.log(megha);
+megha.name = 'Megha';
+megha.birthYear = 2006;
+megha.calcAge ();
+
+console.log(megha.__proto__ === PersonProto);
+
+const shivi = Object.create(Person.Poroto);
+shivi.init('Shivi', 2004);
+shivi.calcAge();
+
 
 
 
