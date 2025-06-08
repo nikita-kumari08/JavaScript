@@ -143,11 +143,18 @@ class PersonCL {
     calcAge(){
         console.log(2037 - this.birthYear);
     }
+
+
+get age() {
+    return 2037 - this.birthYear;
+}
+
 }
 
 const Adii = new PersonCL('Adii', 2004);
 console.log(adii);
 adii.calcAge();
+console.log(adii.age);
 
 console.log(adii.__proto__===PersonCL.prototype);
 
@@ -167,3 +174,13 @@ adii.greet();
 // setters and gretters 
 
 
+const account = {
+    owner = 'Adii',
+    movements: [200, 530, 120, 300],
+
+    get latest () {
+
+        return this.movements.slice
+    }
+
+}
