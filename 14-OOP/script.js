@@ -457,7 +457,7 @@ const shanaya = new StudentCl('shanaya raza', 2004,
 
 //  Inheritance between classes - object.create
 
-const PersonProto = {
+const personProto = {
   calcAge() {
     console.log(2025 - this.birthYear);
   },
@@ -505,7 +505,7 @@ class Account {
   }
 
   // Public interface
-  
+
   deposit(val) {
     this.movements.push(val);
   }
@@ -539,3 +539,145 @@ console.log(acc1);
 console.log(acc1.pin);
 
 
+// Encapsulation - provate class field and methods
+
+// 1) Public fields
+// 2) Private fields
+// 3) Public methods
+// 4) Private methods
+// STATIC version of these 4
+
+class Account {
+  locale = navigator.language;
+  bank = 'Bankist';
+  #movements = [];
+  #pin;
+}
+  constructor(owner, currency, pin) {
+    this.owner = owner;
+    this.currency = currency;
+    this.#pin = pin;
+
+    // this.movements = [];
+    // this.locale = navigator.language;
+
+    console.log(`Thanks for opening an account, ${owner}`);
+  }
+
+  // Public interface (API)
+  getMovements() {
+    return this.#movements;
+    // Not chaninable
+  }
+deposit(val) {
+    this.#movements.push(val);
+    return this;
+  }
+
+  withdraw(val) {
+    this.deposit(-val);
+    return this;
+  }
+
+  #approveLoan(val) {
+    // Fake method
+    return true;
+  }
+
+  requestLoan(val) {
+    if (this.#approveLoan(val)) {
+      this.deposit(val);
+      console.log(`Loan approved`);
+    }
+    return this;
+  }
+
+
+const acc1 = new Account('Adii', 'EUR', 1111);
+// acc1.deposit(300);
+// acc1.withdraw(100);
+const movements = acc1
+  .deposit(300)
+  .withdraw(100)
+  .withdraw(50)
+  .requestLoan(25000)
+  .withdraw(4000)
+  .getMovements();
+
+console.log(acc1);
+// console.log(acc1.#movements);
+// Account.#test();
+console.log(movements);
+
+
+
+// challenge - 4
+
+class CarCl {
+  constructor(make, speed) {
+    this.make = make;
+    this.speed = speed;
+  }
+
+  accelerate() {
+    this.speed += 10;
+    console.log(`${this.make} is going at ${this.speed} km/h`);
+  }
+
+  brake() {
+    this.speed -= 5;
+    console.log(`${this.make} is going at ${this.speed} km/h`);
+    return this;
+  }
+
+  get speedUS() {
+    return this.speed / 1.6;
+  }
+
+  set speedUS(speed) {
+    this.speed = speed * 1.6;
+  }
+}
+
+class EVCl extends CarCl {
+  #charge;
+
+  constructor(make, speed, charge) {
+    super(make, speed);
+    this.#charge = charge;
+  }
+
+  chargeBattery(chargeTo) {
+    this.#charge = chargeTo;
+    return this;
+  }
+
+  accelerate() {
+    this.speed += 20;
+    this.#charge--;
+    console.log(
+      `${this.make} is going at ${this.speed} km/h, with a charge of ${
+        this.#charge
+      }`
+    );
+    return this;
+  }
+}
+
+const Cutu = new EVCl('cutu', 120, 23);
+console.log(cutu);
+
+// console.log(cutu.#charge);
+
+cutu
+  .accelerate()
+  .accelerate()
+  .accelerate()
+  .brake()
+  .chargeBattery(50)
+  .accelerate();
+
+console.log(cutu.speedUS);
+
+
+//****  completed ****//
