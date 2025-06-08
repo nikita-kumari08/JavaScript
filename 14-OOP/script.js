@@ -29,6 +29,11 @@ console.log(shanaya,cutu);
 
 console.log(adii instanceof Person);
 
+Person.hey = function(){
+    console.log('Hey there');
+    console.log(this);
+};
+Person.hey();
 
 
 // prototypes
@@ -161,6 +166,13 @@ set fullName(name){
 
 }
 
+ // static method
+
+static hey (){
+console.log('Hey there');
+    console.log(this);
+};
+
 
 const Adii = new PersonCL('Adii Roy', 2004);
 console.log(adii);
@@ -184,6 +196,8 @@ adii.greet();
 
 const cutu = new Person ('Cutu roy', 2004)
 
+PersonCL.hey();
+
 // setters and gretters 
 
 
@@ -197,3 +211,6 @@ const account = {
     }
 
 }
+
+
+// static merthod
