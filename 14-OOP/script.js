@@ -213,4 +213,14 @@ const account = {
 }
 
 
-// static merthod
+// object create 
+
+const PersonProto ={
+    calcAge(){
+        console.log(2037 - this.birthYear);
+    },
+}
+
+
+
+
