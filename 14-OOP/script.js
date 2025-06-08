@@ -286,7 +286,23 @@ console.log(ford);
 
 
 
+// Inheritance bwteen classes - constructor functions
 
+const Person = function(firstName, birthYear) {
+
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+};
+
+Person.prototype.calcAge = function () {
+  console.log(2025 - this.birthYear);
+};
+
+const Student = function(firstName, birthYear, course) {
+  this.firstName = firstName;
+  this.birthYear = birthYear;
+  this.course = course;
+};
 
 
 
