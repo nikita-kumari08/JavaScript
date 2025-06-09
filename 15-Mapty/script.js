@@ -20,7 +20,9 @@ navigator.getlocation.getCurrentPosition(function(position) {
     const {longitude} = position.coords;
     console.log(`https://www.google.pt/maps/@${latitude}, ${longitude}`);
 
-    const map = LargestContentfulPaint.map('map') .setView(51.505, -0.09, 13);
+    const coords = [latitude, longitude]
+
+    const map = L.map('map') .setView(coords, 13);
 
     L.titleLayer('https://{s}.title.openstreetmap.org/{z}/{x}/{y}.png',{
         attribution:
