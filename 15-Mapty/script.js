@@ -3,14 +3,6 @@
 // prettier-ignore
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-const form = document.querySelector('.form');
-const containerWorkouts = document.querySelector('.workouts');
-const inputType = document.querySelector('.form__input--type');
-const inputDistance = document.querySelector('.form__input--distance');
-const inputDuration = document.querySelector('.form__input--duration');
-const inputCadence = document.querySelector('.form__input--cadence');
-const inputElevation = document.querySelector('.form__input--elevation');
-
 
 class Workout{
     date = new Date();
@@ -63,6 +55,16 @@ console.log(run1,cycling);
 
 
   // application aritecture
+
+const form = document.querySelector('.form');
+const containerWorkouts = document.querySelector('.workouts');
+const inputType = document.querySelector('.form__input--type');
+const inputDistance = document.querySelector('.form__input--distance');
+const inputDuration = document.querySelector('.form__input--duration');
+const inputCadence = document.querySelector('.form__input--cadence');
+const inputElevation = document.querySelector('.form__input--elevation');
+
+
 class   App {
     #map;
     #mapEvent;
@@ -129,18 +131,41 @@ navigator.getlocation.getCurrentPosition (this.loapMap.bind(this),function () {
 
 
     _newWorkout(e) {
+        const validInputs = (...inputs) => inputs.every(inp => Number.isFinite(inp));
         e.preventDefault();
 
 
+        // get data from form 
+        const type = inputType.value;
+        const distance = +inputDistance.value;
+        const duration = +inputDuration.value;
 
-// clear input fields 
- inputDistance.value = inputDuration.value = inputCadence.value = inputElevation.value = '';
+        // check if data is valid
 
+        // if workout running, create running objects
 
-    //Display marker 
+        if(type === 'running'){
+            const cadence = +inputCadence.value;
+            // check if the data is valid
+            if (
+            (!Number.isFinite(distance)) ||
+            (!Number.isFinite(duration)) ||
+             (!Number.isFinite(cadence)) 
+            )
+                return alert('Inputs have to be positive numbers!');
+        }
 
+        // if workout cycling, create cycling objects
+        if (type === 'cycling'){
+            const elevation = +inputElevation.valur;
+        }
 
-    const { lat, lng} = this.#mapEvent.latlng;
+        // add new objects to working array
+
+        // render workout on map as marker
+         
+        
+        const { lat, lng} = this.#mapEvent.latlng;
     L.marker ([lat, lng])
     .addTo(this.#map);
     .bindPopup(
@@ -156,6 +181,14 @@ navigator.getlocation.getCurrentPosition (this.loapMap.bind(this),function () {
     .setPopupContent('Workout')
     .openPopup();
 
+
+        // render workout on list 
+
+// hide form + clear input fields 
+ inputDistance.value = inputDuration.value = inputCadence.value = inputElevation.value = '';
+
+
+   
     }
     }
 
