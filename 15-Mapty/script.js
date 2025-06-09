@@ -23,6 +23,7 @@ navigator.getlocation.getCurrentPosition(function(position) {
     const coords = [latitude, longitude]
 
     const map = L.map('map') .setView(coords, 13);
+    // console.log(map);
 
     L.titleLayer('https://{s}.title.openstreetmap.org/{z}/{x}/{y}.png',{
         attribution:
@@ -34,6 +35,13 @@ navigator.getlocation.getCurrentPosition(function(position) {
     .bindPopup(' A pretty CSS3 popup.<br> Easily customizable.')
     .openPopup();
 
+
+     map.on('click', function(mapEvent){
+        console.log(mapEvent);
+        const{ lat, lng} = mapEvent.latlng;
+
+        L.marker([lat.lng]).addTo(map).bindPopup(L.popup({})).openPopup();
+     })
 
 }, function () {
     alert('Could not get your position')
