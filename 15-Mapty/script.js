@@ -18,6 +18,7 @@ class Workout{
     }
 
 }class Running extends Workout {
+    type = 'running';
     constructor(coords, distance, duration, cadence){
         super(coords,distance, duration);
         this.cadence = cadence;
@@ -33,6 +34,7 @@ class Workout{
 
 
 class Cycling extends Workout {
+    type = 'cycling';
     constructor(coords, distance, duration, elevationGain){
         super(coords,distance, duration);
         this.elevationGain = elevationGain;
@@ -208,7 +210,7 @@ navigator.getlocation.getCurrentPosition (this.loapMap.bind(this),function () {
             minWidth: 100,
             autoClose: false,
             closeOnClick: false,
-            className: '${type}-popup',
+            className: '${workout.type}-popup',
         })
     )
     .setPopupContent('Workout')
