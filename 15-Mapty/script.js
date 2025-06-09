@@ -4,6 +4,7 @@
 class Workout{
     date = new Date();
     id = (Date.now() + '').slice(-10);
+    clicks = 0;
 
 
     constructor(coords, distance, duration) {
@@ -27,6 +28,10 @@ const months = ['January','February',  'March',  'April',  'May', 'June', 'July'
     } ${this.date.getDate()}`;
 
 
+    }
+
+    click() {
+        this.click++;
     }
 }class Running extends Workout {
     type = 'running';
@@ -314,6 +319,9 @@ this.#map.setView(workout.coords,this.mapZoomLevel, {
     pan:{
         duration: 1,
     }
-}
-)
+     });
+
+
+     //using the public interface
+     
      }
