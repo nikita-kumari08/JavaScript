@@ -30,10 +30,15 @@ navigator.getlocation.getCurrentPosition(function(position) {
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
 
-    L.marker([51.5, -0.09])
-    .addTo(map)
-    .bindPopup(' A pretty CSS3 popup.<br> Easily customizable.')
-    .openPopup();
+    map.on('click', function(mapEvent){
+        form.classList.remove('hidden');
+        inputDistance.focus();
+    })
+
+    // L.marker([51.5, -0.09])
+    //  .addTo(map)
+    //.bindPopup(' A pretty CSS3 popup.<br> Easily customizable.')
+    // .openPopup();
 
 
      map.on('click', function(mapEvent){
