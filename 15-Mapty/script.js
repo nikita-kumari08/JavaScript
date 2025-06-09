@@ -144,6 +144,11 @@ navigator.getlocation.getCurrentPosition (this.loapMap.bind(this),function () {
     // Handling clicks on map
 
     this.#map.on('click', this.showForm) {
+
+
+        this.#workouts.forEach(work =>{
+        this._renderWorkoutMarker(work);
+      });
    
     };
         
@@ -341,6 +346,9 @@ this.#map.setView(workout.coords,this.mapZoomLevel, {
 
 
      //using the public interface
+
+     // workout.clicks
+
      workout.click();
      }
 
@@ -365,6 +373,12 @@ this.#map.setView(workout.coords,this.mapZoomLevel, {
 
       this.#workouts.forEach(work =>{
         this._renderWorkout(work);
-        this._renderWorkoutMarker(work);
       });
     }
+
+reset() {
+    localStorage.removeItems('workouts');
+    location.reload();
+}
+
+const app = new App;
