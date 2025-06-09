@@ -382,3 +382,5 @@ reset() {
 }
 
 const app = new App;
+
+        //*** completed ***//
