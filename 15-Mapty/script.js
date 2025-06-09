@@ -16,6 +16,18 @@ const inputElevation = document.querySelector('.form__input--elevation');
 if(navigator.geolocation)
 navigator.getlocation.getCurrentPosition(function(position) {
     console.log(position);
+    const {latitude} = position.coords;
+    const {longitude} = position.coords;
+    console.log(`https://www.google.pt/maps/@${latitude}, ${longitude}`);
+
+
+
+
+
+
+
 }, function () {
     alert('Could not get your position')
 })
+
+
