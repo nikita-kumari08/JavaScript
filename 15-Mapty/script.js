@@ -189,7 +189,18 @@ navigator.getlocation.getCurrentPosition (this.loapMap.bind(this),function () {
         // add new objects to working array
 
         // render workout on map as marker   
-    L.marker ([lat, lng])
+
+        this.renderWorkoutMarker(workout);
+       
+        // render workout on list 
+
+// hide form + clear input fields 
+ inputDistance.value = inputDuration.value = inputCadence.value = inputElevation.value = 
+ '';
+
+ }
+ renderWorkoutMarker(workout) {
+    L.marker (workout.coords)
     .addTo(this.#map);
     .bindPopup(
         L.popup({
@@ -197,28 +208,9 @@ navigator.getlocation.getCurrentPosition (this.loapMap.bind(this),function () {
             minWidth: 100,
             autoClose: false,
             closeOnClick: false,
-            className: 'running-popup',
+            className: '${type}-popup',
         })
     )
-
     .setPopupContent('Workout')
     .openPopup();
-
-
-        // render workout on list 
-
-// hide form + clear input fields 
- inputDistance.value = inputDuration.value = inputCadence.value = inputElevation.value = '';
-
-
-   
-    }
-    }
-
-const app = new App();
-constructor() {
-this._getPosition();
-
-}
-
-
+ }
