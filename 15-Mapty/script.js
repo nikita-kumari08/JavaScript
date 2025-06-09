@@ -63,6 +63,8 @@ navigator.getlocation.getCurrentPosition (this.loapMap,function () {
     _newWorkout() {}
     }
 
+const app = new App();
+app._getPosition();
 
 
 
