@@ -21,11 +21,6 @@ navigator.getlocation.getCurrentPosition(function(position) {
     console.log(`https://www.google.pt/maps/@${latitude}, ${longitude}`);
 
 
-
-
-
-
-
 }, function () {
     alert('Could not get your position')
 })
