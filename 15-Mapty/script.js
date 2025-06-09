@@ -12,6 +12,7 @@ const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
 
 
+let map , mapEvent;
 
 if(navigator.geolocation)
 navigator.getlocation.getCurrentPosition(function(position) {
@@ -22,7 +23,7 @@ navigator.getlocation.getCurrentPosition(function(position) {
 
     const coords = [latitude, longitude]
 
-    const map = L.map('map') .setView(coords, 13);
+    map = L.map('map') .setView(coords, 13);
     // console.log(map);
 
     L.titleLayer('https://{s}.title.openstreetmap.org/{z}/{x}/{y}.png',{
@@ -30,26 +31,49 @@ navigator.getlocation.getCurrentPosition(function(position) {
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
 
-    map.on('click', function(mapEvent){
+
+    // Handling clicks on map
+
+    map.on('click', function(mapE){
+        mapEvent = mapE;
         form.classList.remove('hidden');
         inputDistance.focus();
-    })
+    });
+},
 
-    // L.marker([51.5, -0.09])
-    //  .addTo(map)
-    //.bindPopup(' A pretty CSS3 popup.<br> Easily customizable.')
-    // .openPopup();
-
-
-     map.on('click', function(mapEvent){
-        console.log(mapEvent);
-        const{ lat, lng} = mapEvent.latlng;
-
-        L.marker([lat.lng]).addTo(map).bindPopup(L.popup({})).openPopup();
-     })
-
-}, function () {
+ function () {
     alert('Could not get your position')
 })
 
+form.addEventListener('submit', function (e){
+e.preventDefault();
+
+
+
+// clear input fields 
+inputDistance.value = inputDuration.value = inputCadence.value = inputElevation.value '';
+
+
+    //Display marker 
+
+
+    console.log(mapEvent);
+    const { lat, lng} = mapEvent.latlng;
+    L.marker ([lat, lng])
+    .addTo(map);
+    .bindPopup(
+        L.popup({
+            maxWidth: 250,
+            minWidth: 100,
+            autoClose: false,
+            closeOnClick: false,
+            className: 'running-popup',
+        })
+    )
+
+    .setPopupContent('Workout')
+    .openPopup();
+});
+
+input.Type
 
