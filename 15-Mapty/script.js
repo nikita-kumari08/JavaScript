@@ -157,7 +157,12 @@ navigator.getlocation.getCurrentPosition (this.loapMap.bind(this),function () {
 
         // if workout cycling, create cycling objects
         if (type === 'cycling'){
-            const elevation = +inputElevation.valur;
+            const elevation = +inputElevation.value;
+
+            if(!validInputs(distance, duration, elevations))
+                return alert('Inputs have to be positive numbers!');
+
+
         }
 
         // add new objects to working array
