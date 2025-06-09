@@ -14,15 +14,55 @@ const inputElevation = document.querySelector('.form__input--elevation');
 
 class Workout{
     date = new Date();
+    id = (new Date() + '').slice(-10);
+
 
     constructor(coords, distance, duration) {
+       // this.date = ...
+       // this.id = ...
         this.coords = coords;
         this.distance = distance; // in km
         this.duration = duration; // in min 
     }
 
+}class Running extends Workout {
+    constructor(coords, distance, duration, cadence){
+        super(coords,distance, duration);
+        this.cadence = cadence;
+        this.calcPace();
+    }
+
+    calcPace() {
+        //min/km
+        this.pace = this.duration / this.distance;
+        return this.pace
+    }
 }
 
+
+class Cycling extends Workout {
+    constructor(coords, distance, duration, elevationGain){
+        super(coords,distance, duration);
+        this.elevationGain = elevationGain;
+        this.calcSpeed();
+
+    }
+    calcSpeed(){
+        //km/hr
+        this.speed = this.distance/ (this.duration /60)
+        return this.speed
+    }
+}
+
+
+
+const run1 = new Running([39, -12], 5.2, 24, 178);
+const run1 = new Cyclinmg([39, -12], 27, 95, 523);
+console.log(run1,cycling);
+
+
+
+  // application aritecture
 class   App {
     #map;
     #mapEvent;
