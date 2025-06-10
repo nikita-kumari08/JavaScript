@@ -156,12 +156,14 @@ setTimeout(() => {
 
 
 const request = fetch9'https://restcountries.eu/rest/
-v2/name/india'):
+v2/name/india');
 console.log(requests);
 
 
 
 const getCountryData = function (country) {
+
+  // country 1 
 
   getJSON(
     `https://restcountries.com/v2/name/${country}`,
@@ -183,6 +185,7 @@ const getCountryData = function (country) {
       if (!neighbour) throw new Error('No neighbour found!');
 
       // Country 2
+
       return getJSON(
         `https://restcountries.eu/rest/v2/alpha/${neighbour}`,
         'Country not found'
@@ -191,7 +194,9 @@ const getCountryData = function (country) {
 };
 
 const getCountryData = function (country) {
-  // Country 1
+ 
+    // Country 1
+
   fetch(`https://restcountries.com/v2/name/${country}`)
     .then(response => {
       console.log(response);
@@ -203,8 +208,8 @@ const getCountryData = function (country) {
     })
     .then(data => renderCountry(data, 'neighbour'))
     .catch(err => {
-      console.error(`${err} 💥💥💥`);
-      renderError(`Something went wrong 💥💥 ${err.message}. Try again!`);
+      console.error(`${err} `);
+      renderError(`Something went wrong  ${err.message}. Try again!`);
     })
     .finally(() => {
       countriesContainer.style.opacity = 1;
@@ -218,12 +223,15 @@ const getCountryData = function (country) {
     })
     .then(data => {
       renderCountry(data[0]);
+
       // const neighbour = data[0].borders[0];
+
       const neighbour = 'dfsdfdef';
 
       if (!neighbour) return;
 
       // Country 2
+
       return fetch(`https://restcountries.eu/rest/v2/alpha/${neighbour}`);
     })
 };
@@ -268,13 +276,13 @@ btn.addEventListener('click', function () {
       return fetch(`https://restcountries.com/v2/name/${data.country}`);
     })
     .then(data => renderCountry(data[0]))
-    .catch(err => console.error(`${err.message} 💥`));
+    .catch(err => console.error(`${err.message} `));
 };
 
+
+whereAmI(52.508, 13.381);
 whereAmI(19.037, 72.873);
 whereAmI(-33.933, 18.474);
-whereAmI(52.508, 13.381);
-
 
 
 // The Event Loop 
@@ -305,6 +313,9 @@ const lotteryPromise = new Promise(function (resolve, reject) {
     }
   }, 2000);
 });
+  
+ // promisifying settimeout
+
 
 const wait = function (seconds) {
   return new Promise(function (resolve) {
@@ -328,6 +339,22 @@ wait(1)
     return wait(1);
   })
   .then(() => console.log('4 second passed'));
+
+  //setTimeout(() => {
+  //console.log('1 second passed');
+  //setTimeout(() => {
+    //console.log('2 seconds passed');
+    //setTimeout(() => {
+      //console.log('3 second passed');
+      //setTimeout(() => {
+       // console.log('4 second passed');
+     // }, 1000);
+    //}, 1000);
+ //}, 1000);
+//}, 1000);
+
+
+
 
 Promise.resolve('abc').then(x => console.log(x));
 Promise.reject(new Error('Problem!')).catch(x => console.error(x));
