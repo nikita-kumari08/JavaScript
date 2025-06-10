@@ -486,10 +486,7 @@ whereAmI = async function () {
       `https://restcountries.com/v2/name/${dataGeo.countryCode}`
     );
 
-    // BUG in video:
-    // if (!resGeo.ok) throw new Error('Problem getting country');
-
-    // FIX:
+    
 
     if (!res.ok) throw new Error('Problem getting country');
 
@@ -506,6 +503,8 @@ whereAmI();
 whereAmI();
 console.log('FIRST');
 
+
+
 // try {
 //   let y = 1;
 //   const x = 2;
@@ -517,6 +516,7 @@ console.log('FIRST');
 
 
 // Returning Values from Async Functions
+
 getPosition = function () {
   return new Promise(function (resolve, reject) {
     navigator.geolocation.getCurrentPosition(resolve, reject);
@@ -525,6 +525,7 @@ getPosition = function () {
 
 whereAmI = async function () {
   try {
+    
     // Geolocation
 
     const pos = await getPosition();
