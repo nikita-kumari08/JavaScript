@@ -16,6 +16,10 @@ request.open('GET','https://restcountries.eu/rest/v2/name/india');
 data = request.send();
 
 
+request.addEventListener('load', function() { 
+    console.log(this.responseText);
+})
+
 
 
 
