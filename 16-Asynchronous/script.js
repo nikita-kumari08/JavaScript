@@ -515,3 +515,4 @@ console.log('1: Will get location');
 //   .finally(() => console.log('3: Finished getting location'));
 
 
+(async function ()try { -512,20 +505,9 })();
