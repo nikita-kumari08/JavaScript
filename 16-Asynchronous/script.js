@@ -92,8 +92,14 @@ const getCountryData = function (country) {
 
 
 
-// CallbackMore actions
+// Callback
+
+
 const getCountryAndNeighbour = function (country) {
+
+
+    // ajax call country 1
+
 
     request.addEventListener('load', function () {
     const [data] = JSON.parse(this.responseText);
@@ -107,11 +113,17 @@ const getCountryAndNeighbour = function (country) {
     request2.open('GET', `https://restcountries.eu/rest/v2/alpha/${neighbour}`);
     request2.send();
 
+    // render country 1
+
     renderCountry(data);
+
+    // get neighbour country (2)
 
     const [neighbour] = data.borders;
 
     if (!neighbour) return;
+
+    // ajax call country (2)
 
     request2.addEventListener('load', function () {
       const data2 = JSON.parse(this.responseText);
@@ -121,6 +133,9 @@ const getCountryAndNeighbour = function (country) {
     });
   });
 };
+
+
+// Get countryAndNeighbour('india')
 
 getCountryAndNeighbour('usa');
 
@@ -138,9 +153,13 @@ setTimeout(() => {
 }, 1000);
 
 //Consuming Promises
-// Chaining Promises
-// Handling Rejected Promises
-// throwing Errors Manually
+
+
+const request = fetch9'https://restcountries.eu/rest/
+v2/name/india'):
+console.log(requests);
+
+
 
 const getCountryData = function (country) {
 
