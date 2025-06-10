@@ -516,3 +516,47 @@ console.log('1: Will get location');
 
 
 (async function ()try { -512,20 +505,9 })();
+
+
+// Running Promises in Parallel
+const get3Countries = async function (c1, c2, c3) 
+  try {
+    // const [data1] = await getJSON(
+    //   `https://restcountries.com/v2/name/${c1}`
+    // );
+    // const [data2] = await getJSON(
+    //   `https://restcountries.com/v2/name/${c2}`
+    // );
+    // const [data3] = await getJSON(
+    //   `https://restcountries.com/v2/name/${c3}`
+    // );
+    // console.log([data1.capital, data2.capital, data3.capital]);
+
+    const data = await Promise.all
+      getJSON(`https://restcountries.com/v2/name/${c1}`),
+ -539,10 +521,6 
+};
+get3Countries('portugal', 'canada', 'tanzania');
+
+
+
+// Other Promise Combinators: race, allSettled and any
+
+// Promise.race
+
+(async function () {
+  const res = await Promise.race([
+    getJSON(`https://restcountries.com/v2/name/italy`),
+ -591,9 +569,6 
+  .then(res => console.log(res))
+  .catch(err => console.error(err));
+  ])};
+
+// challenge - 3
+
+
+const wait = function (seconds) {
+  return new Promise(function (resolve) {
+ -621,26 +596,6 
+
+let currentImg;
