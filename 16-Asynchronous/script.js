@@ -155,7 +155,7 @@ setTimeout(() => {
 //Consuming Promises
 
 
-const request = fetch9'https://restcountries.eu/rest/
+const request = fetch9('https://restcountries.eu/rest/
 v2/name/india');
 console.log(requests);
 
