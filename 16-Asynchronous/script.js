@@ -572,7 +572,7 @@ console.log('1: Will get location');
     const city = await whereAmI();
     console.log(`2: ${city}`);
   } catch (err) {
-    console.error(`2: ${err.message} 💥`);
+    console.error(`2: ${err.message} `);
   }
   console.log('3: Finished getting location');
 })();
