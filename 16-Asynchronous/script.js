@@ -357,7 +357,8 @@ wait(1)
 
 
 Promise.resolve('abc').then(x => console.log(x));
-Promise.reject(new Error('Problem!')).catch(x => console.error(x));
+Promise.reject(new Error('Problem!')).catch(x => 
+    console.error(x));
 
 
 
@@ -384,13 +385,15 @@ const whereAmI = function () {
     .then(pos => {
       const { latitude: lat, longitude: lng } = pos.coords;
 
-      return fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}`);
+      return fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?
+        latitude=${lat}&longitude=${lng}`);
     })
     .then(data => {
       console.log(data);
       console.log(`You are in ${data.city}, ${data.countryCode}`);
 
-      return fetch(`https://restcountries.com/v2/name/${data.countryCode}`);
+      return fetch(`https://restcountries.com/v2/
+        name/${data.countryCode}`);
     })
     .then(data => renderCountry(data[0]))
     .catch(err => console.error(`${err.message} `));
@@ -462,6 +465,7 @@ getPosition = function () {
 
 whereAmI = async function () {
   try {
+    
     // Geolocation
 
     const pos = await getPosition();
