@@ -231,12 +231,6 @@ btn.addEventListener('click', function () {
 
    // Challenge - 1
 
-const whereAmI = function (lat, lng) {
-  fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}`)
-    .then(res => {
-      if (!res.ok) throw new Error(`Problem wi
-
-
 
 
 
