@@ -452,7 +452,8 @@ createImage('img/img-1.jpg')
   .catch(err => console.error(err));
 
 
-// Consuming Promises with Async/Await
+// Consuming promises with Async
+//Consuming promises with Await
 // Error Handling With try...catch
 
 getPosition = function () {
@@ -465,7 +466,7 @@ getPosition = function () {
 
 whereAmI = async function () {
   try {
-    
+
     // Geolocation
 
     const pos = await getPosition();
