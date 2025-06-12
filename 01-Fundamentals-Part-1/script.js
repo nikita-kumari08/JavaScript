@@ -4,7 +4,7 @@ console.log(myNumber);
 
 //****Vales and Variables  ****//
 
-let country = 'Protugal' ;
+//let country = 'Protugal' ;
 let continent = 'Europe' ;
 let population = 10;
 console.log(country);
@@ -13,7 +13,7 @@ console.log(population);
 
 //****Data types ****//
 
-let isIsland = false;
+//let isIsland = false;
 let language;
 console.log(typeof isIsland);
 console.log(typeof population);
@@ -32,7 +32,7 @@ console.log(typeof javascriptIsFun);
 javascriptIsFun = 'YES!' ;
 console.log(typeof javascriptIsFun);
 
-let year ;
+//let year ;
 console.log(year);
 console.timelog(typeof year);
 
@@ -45,14 +45,14 @@ console.log(typeof null);
 
 language = 'portugues';
 const country = 'Portugal';
-const isIsland = 'Europe';
+//const isIsland = 'Europe';
 const isIsland = false ;
-isIsland true ;
+//isIsland true ;
 
-let age = 30;
+//let age = 30;
 age = 31;
 
-const birthYear = 1991;
+//const birthYear = 1991;
 //birthyear = 1990;
 //const job ;
 
@@ -67,7 +67,7 @@ population ++;
 console.log(population);
 console.log(population > 6);
 console.log(population < 33);
-count description =
+//count description =
 country +
 ' is in' +
 continent +
@@ -86,13 +86,13 @@ console.log(agejonas , agesarah);
 console.log(agejonas * 2 , agejonas / 10 , 2**3)
 //2 ** 3 means 2 to the power of 3 = 2*2*2 
 
-const firstName = 'Jonas';
+//const firstName = 'Jonas';
 const lastName = 'Schedthmann'
 console.log(firstName +'' +lastName);
 
 //*** assignment operators *** //
 
-let x = 10 = 5; //15
+//let x = 10 = 5; //15
 x=+ 10; // x = x+10 = 25
 x+=4; // x = x*4 = 100
 x++; // x = x + 1
@@ -110,7 +110,7 @@ const isFullage = ageSarah >= 18;
 
 const now = 2037;
 const ageJonas = now - 1991;
-const age sarah = now - 2018;
+//const age sarah = now - 2018;
 
 consaol.log(now - 1991 > now - 2018);
 
@@ -124,41 +124,41 @@ console.log(ageJonas , ageSarah , avgerageAge);
 
 //challenge 1 //
 
-const massMark = 78;
-const heightMark = 1.69;
-const massJohn = 92;
-const heightJohn = 1.95;
+//const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
 
-const BMImark = massMark / heightMark ** 2;
-const BMIJohn = massJohn / (heightJohn * heightJohn);
-const markHigher = BMIMark > BMIJohn;
+//const BMImark = massMark / heightMark ** 2;
+//const BMIJohn = massJohn / (heightJohn * heightJohn);
+//const markHigher = BMIMark > BMIJohn;
 
 console.log(BMIMark , BMIJohn ,markHigherBMI );
 
-const massMark = 95;
-const heightMark = 1.88;
-const massJohn = 85;
-const heightJohn = 1.76;
+//const massMark = 95;
+// const heightMark = 1.88;
+// const massJohn = 85;
+// const heightJohn = 1.76;
 
-const BMImark = massMark / heightMark ** 2;
-const BMIJohn = massJohn / (heightJohn * heightJohn);
-const markHigher = BMIMark > BMIJohn;
+//const BMImark = massMark / heightMark ** 2;
+//const BMIJohn = massJohn / (heightJohn * heightJohn);
+//const markHigher = BMIMark > BMIJohn;
 console.log(BMIMark , BMIJohn ,markHigherBMI);
 
 
 //**** Strings and Template Literals ****//
 
-count description = '$ {country} is in ${continent}, and its ${population} million people speak ${language}';
+//count description = '$ {country} is in ${continent}, and its ${population} million people speak ${language}';
 
-const firstName = 'Shanaya';
+//const firstName = 'Shanaya';
 const job = 'teacher';
-const birthYear = 1991;
-const year = 2037;
+//const birthYear = 1991;
+//const year = 2037;
 
-const shanaya = "I'm" + firstName + ',a' + (year - birsthYear) + 'year old' + job + '!' ;
+//const shanaya = "I'm" + firstName + ',a' + (year - birsthYear) + 'year old' + job + '!' ;
 console.log(shanaya);
 
-const shanaya = 'I'm ${firstName},a ${year - birthYear} years old ${job}!';
+//const shanaya = 'I'm ${firstName},a ${year - birthYear} years old ${job}!';
 console.log(shanayaNew);
 
 console.log('Justva regualar string ...');
@@ -171,10 +171,10 @@ console.log('String with \n\
 //**** Taking descisions ****//
 
 if(population > 33) {
-    console.lo('${country}'s population is above average');
+  //  console.lo('${country}'s population is above average');
     } else {
-        '${country}'s population is ${33 - population} million below average' ,
-    ) ;
+  //      '${country}'s population is ${33 - population} million below average' ,
+  //  ) ;
 }
 
 
@@ -210,14 +210,14 @@ const BMIJohn = massJohn / (heightJohn * heightJohn);
 const markHigher = BMIMark > BMIJohn;
 console.log(BMIMark , BMIJohn );
 if(BMIMark > BMIJohn) {
-    console.log('Mark's BMI (${BMIMark}) is higher than john's (${BMIJohn})!')
+   // console.log('Mark's BMI (${BMIMark}) is higher than john's (${BMIJohn})!')
 } else {
-    console.log('john's BMI (${BMIJohn}) is higher than Mark's (${BMIMark)}!')
+   // console.log('john's BMI (${BMIJohn}) is higher than Mark's (${BMIMark)}!')
 
 
 //****Type conversion ****//
 
-    count inputYear = '1991';
+  //  count inputYear = '1991';
     console.log(Number(inputYear),inputYear );
     console.log(Number(inputYear) + 18);
 
@@ -228,8 +228,8 @@ if(BMIMark > BMIJohn) {
 
 console.log('9' - '5'); 
 console.log ('19' - '13' + '17');
-console.log ('19' - '13' + '17);
-    console.log('123' < 57);
+//console.log ('19' - '13' + '17);
+   // console.log('123' < 57);
     console.log( 5 + 6+ '4' + 9 - 4 - 2);
 
     console.log('I am' + 23 + 'years old ');
@@ -264,7 +264,7 @@ if (shanaya) {
     }
 
 
-    const age = 18;
+    //const age = 18;
     if ( age == 18) console.log('You have became an adult :D');
 
 
@@ -319,7 +319,7 @@ if(hasDriversLicence && hasGoodVision){
     console.log('Dolphins wins the trophy');
  } else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
     console.log('Koalas wins the trophy');
- } else if (scoreDolphins === scoreKoalas && scoreDolphins>= 100  && scoreKoalas>= 100_{
+ //} else if scoreDolphins === scoreKoalas && scoreDolphins>= 100  && scoreKoalas>= 100_{
     console.log('Both wins the trophy!');
  } else {
     console.log('No one wins the trophy');
@@ -369,7 +369,7 @@ if(hasDriversLicence && hasGoodVision){
     case 'friday' :
         console.log('Record videos ');
         break ;
-        case 'saturday' ;
+        case 'saturday' :
         case 'sunday' :
             console.log('Enjoy the weekend :D');
             break;
@@ -384,17 +384,17 @@ if(hasDriversLicence && hasGoodVision){
           } else if (day === 'wednesday' || day ==='thursday'){
             console.log('Write solutions');
           } else if ('Record Your Datas');
-          } else if (day ==='saturday' || day === 'sunday') {
+         // } else if (day ==='saturday' || day === 'sunday') {
             console.log('Enjoy the weekend :D');
-          } else {
+         // } else {
             console.log('Not a valid day!');
-          }
+          
         
     
     //**** The conditional ****//
 
     console.log(
-        '${country}'s population is ${population > 33 ? 'above' : 'below'} average',
+     //   '${country}'s population is ${population > 33 ? 'above' : 'below'} average',
     );
     
 
@@ -407,7 +407,7 @@ if(23>10) {
     const str = '23 is bigger ';
 }
 const me = 'Shanaya';
-console.log('I'm ${2025 - 2004} years old ${me}');
+//console.log('I'm ${2025 - 2004} years old ${me}');
 
 
 
@@ -427,7 +427,7 @@ console.log('I'm ${2025 - 2004} years old ${me}');
     }
     console.log(drink2);
 
-    console'log('I like to drink ${Age >= 18 ? 'wine' : 'water'}');
+    //console'log('I like to drink ${Age >= 18 ? 'wine' : 'water'}');
 
 
     // challenges - 4 //
@@ -439,4 +439,4 @@ console.log('I'm ${2025 - 2004} years old ${me}');
 
 
 
-                                //*****Fundamental 01 Completed *****//
+                                
