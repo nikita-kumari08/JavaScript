@@ -114,7 +114,7 @@ const greetArr = greeting => name => console.log('${greeting}. ${name}');
 greetArr('Hi')('adii');
 
 
-/ THE CALL AND APPLY METHODS 
+// THE CALL AND APPLY METHODS 
 
 const lufthansa = {
     airline: 'Lufthansa',

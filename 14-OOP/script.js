@@ -135,7 +135,7 @@ bmwm5.accelerate();
 
 
 //class expressions 
-class PersonCL = class {}
+//class PersonCL = class {}
 
 
 //class declaration 
@@ -161,17 +161,17 @@ set fullName(name){
     if(name.includes('')) this.fullName = name;
     else alert (`${name} is not a full name!`);}
 } 
- get fullName() {
+ //get fullName() {
     return this._fullName;
 
-}
+//}
 
  // static method
 
-static hey (){
+//static hey (){
 console.log('Hey there');
     console.log(this);
-};
+//};
 
 
 const Adii = new PersonCL('Adii Roy', 2004);
@@ -194,7 +194,7 @@ adii.greet();
 
    
 
-const cutu = new Person ('Cutu roy', 2004)
+//const cutu = new Person ('Cutu roy', 2004)
 
 PersonCL.hey();
 
@@ -202,7 +202,7 @@ PersonCL.hey();
 
 
 const account = {
-    owner = 'Adii',
+    //owner = 'Adii',
     movements: [200, 530, 120, 300],
 
     get latest () {
@@ -264,7 +264,7 @@ accelerate(){
             speed} km/h`);
     }
 }
-
+/*
 get speedUs() {
     return this.speed / 1.6;
 }
@@ -332,10 +332,10 @@ console.dir(Student.prototype.constructor);
 // challenge - 3
 
 
-const Car = function (make, speed) {
+//const Car = function (make, speed) {
   this.make = make;
   this.speed = speed;
-};
+;
 
 Car.prototype.accelerate = function () {
   this.speed += 10;
@@ -445,8 +445,8 @@ class StudentCl extends PersonCl {
   }
 }
 
-const shanaya = new StudentCl('shanaya raza', 2004,
-     'Computer Science');
+//const shanaya = new StudentCl('shanaya raza', 2004,
+     //'Computer Science');
      shanaya.introduces();
      shanaya.calcAge();
 
@@ -553,7 +553,7 @@ class Account {
   #movements = [];
   #pin;
 }
-  constructor(owner, currency, pin) {
+  constructor(owner, currency, pin) 
     this.owner = owner;
     this.currency = currency;
     this.#pin = pin;
@@ -578,7 +578,7 @@ deposit(val) {
     this.deposit(-val);
     return this;
   }
-
+/*
   #approveLoan(val) {
     // Fake method
     return true;
@@ -680,4 +680,4 @@ cutu
 console.log(cutu.speedUS);
 
 
-//****  completed ****//
+completed */

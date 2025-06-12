@@ -1,7 +1,7 @@
 'use strict';
 
 // Data needed for a later exercise
-const flights =
+//const flights =
   '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
 
 const italianFoods = new Set([
@@ -23,31 +23,31 @@ const mexicanFoods = new Set([
 ]);
 
 // Data needed for first part of the section
-const restaurant = {
-  name: 'Classico Italiano',
-  location: 'Via Angelo Tavanti 23, Firenze, Italy',
-  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+//const restaurant = {
+  name; 'Classico Italiano',
+  location; 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories; ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu; ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu; ['Pizza', 'Pasta', 'Risotto'],
 
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0, // Open 24 hours
-      close: 24,
-    },
-  },
-};
+  openingHours; 
+    thu; 
+      open; 12,
+      close; 22,
+    
+    fri; 
+      open; 11,
+      close; 23,
+    
+    sat; 
+      open; 0, // Open 24 hours
+      close; 24,
+    
+  
+//};
 
-
- const restaurant =     {     //More actions
+/*
+ const restaurant =     {     
   name: 'Classico Italiano',
   location: 'Via Angelo Tavanti 23, Firenze, Italy',
   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
@@ -327,7 +327,7 @@ console.log(rest2);
 
 
 
-                   //*****  CHALLENGE- 1 *****//
+                   //*****  CHALLENGE- 1 *****
  
 // 1.
 
@@ -521,32 +521,32 @@ rest
   .set('open', 11)
   .set('close', 23)
   .set(true, 'We are open :D'
-  .set(false, 'We are closed :);
+  // set(false, 'We are closed :);
 
-console.log(rest.get('name'));
-console.log(rest.get(true));
-console.log(rest.get(1));
+//console.log(rest.get('name'));
+//console.log(rest.get(true));
+//console.log(rest.get(1));
 
-const time = 8;
-console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
+//const time = 8;
+//console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
 
-console.log(rest.has('categories'));
-rest.delete(2);
+//console.log(rest.has('categories'));
+//rest.delete(2);
 // rest.clear();
+//
+//const arr = [1, 2];
+//rest.set(arr, 'Test');
+// rest.set(document.querySelector('h1'), 'Heading');
+// console.log(rest);
+// console.log(rest.size);
 
-const arr = [1, 2];
-rest.set(arr, 'Test');
-rest.set(document.querySelector('h1'), 'Heading');
-console.log(rest);
-console.log(rest.size);
-
-console.log(rest.get(arr));
+//console.log(rest.get(arr));
 
 
 
 // MAPS: Iteration
-
-const question = new Map([
+/*
+//const question = new Map([
   ['question', 'What is the best programming language in the world?'],
   [1, 'CSS'],
   [2, 'Java'],
@@ -554,7 +554,7 @@ const question = new Map([
   ['correct', 3],
   [true, 'Correct'],
   [false, 'Try again!'],
-]);
+s;
 console.log(question);
 
 // Convert object to map
@@ -585,7 +585,7 @@ console.log([...question.values()]);
 
 
              //**** CHALLENGE - 3 ****//
-
+/*
 const gameEvents = new Map([
   [17, 'GOAL'],
   [36, 'Substitution'],
@@ -819,7 +819,6 @@ document.querySelector('button').addEventListener('click', function () {
                   
                     
                   
-              
+  
                 
-
-                 //****** COMPLELETED ******//
+*/    )

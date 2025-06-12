@@ -41,7 +41,7 @@ console.log(document.documentElement);
 console.log(document.head);
 console.log(document.body);
 
-const header = document.querySelector('.header');
+//const header = document.querySelector('.header');
 const allSelection = document.querySelectorAll('.section');
 console.log(allSelections);
 
@@ -271,9 +271,9 @@ imgTargets.forEach(img => imgObserver.observe(img));
 
 
 //building a slider components - part 1
-
+/*
   const slider = function () 
-  const slides = document.querySelectorAll('.slide');
+  //const slides = document.querySelectorAll('.slide');
   const btnLeft = document.querySelector('.slider__btn--left');
   const btnRight = document.querySelector('.slider__btn--right');
   const dotContainer = document.querySelector('.dots');

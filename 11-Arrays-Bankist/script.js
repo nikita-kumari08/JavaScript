@@ -67,9 +67,9 @@ const displayMovements = function(movements, sort = false) {
   // .textcontent = 0
 
   const movs = sort? movements.slice().sort((a, b)
-=> a - b) ; movements;
+//=> a - b) ; movements;
 
-
+/*
 movements.forEach function(mov, i){
   const type =  mov > 0 ? 'deposit' : 'withdrawal';
 
@@ -284,12 +284,13 @@ console.log([...arr]);
 
 
 // console.log(arr.splice(2));
+/*
 arr.splice(-1);
 console.log(arr);
 arr.splice(1,2);
 console.log(arr);
 
-//***Reverse ***//
+//***Reverse
 
 arr = ['a', 'b', 'c', 'd', 'e'];
 const arr2 = ['j', 'i', 'h', 'g', 'f'];
@@ -297,7 +298,7 @@ console.log(arr2.reverse());
 console.log(arr2);
 
 
-//*** Concat ***//
+//*** Concat
 const letters = arr.concat(arr2);
 console.log(letters);
 console.log([...arr, ...arr2]);
@@ -313,33 +314,34 @@ console.log(arr[0]);
 console.log(arr.at[0]);
 
 
- //*** Getting last array element  ***//
+ //*** Getting last array element
 
+/*
 console.log(arr[arr.length - 1]);
 console.log(arr.slice(-1)[0]);
 console.log(arr.at(-1));
 console.log('adii'.at(-1));
 
-  //***  Looping array ***//
+  //***  Looping array **//
 
-const movement = [200, 450, -400, 3000, -650, -130, 70, 1300];
+//const movement = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-for (const [i,movement] of movements.entries()) 
-if (movement > 0) {
-    console.log('Movement ${i + 1}: You deposited ${movement}');
-  } else {
-    console.lo('Movement ${i + 1}: You withdrew $ {Math.abs(movement)}');
+//for (const [i,movement] of movements.entries()) 
+//if (movement > 0) {
+   // console.log('Movement ${i + 1}: You deposited ${movement}');
+  //} else {
+    //console.log('Movement ${i + 1}: You withdrew $ {Math.abs(movement)}');
 
-  };
+};
 
 
 console.log(' ----FOREACH ----')
 movements.forEach(function(mov , i , arr) 
-if (mov > 0) {
-    console.log('Movement ${ i + 1}: You deposited ${mov}');
-  } else {
-    console.log('Movement ${ i + 1}: You withdrew $ {Math.abs(mov)}');
-  }
+//if (mov > 0) {
+    //console.log('Movement ${ i + 1}: You deposited ${mov}');
+  //} else {
+    //console.log('Movement ${ i + 1}: You withdrew $ {Math.abs(mov)}');
+ // }
 );
 
 
@@ -409,11 +411,8 @@ for (const mov of movements) movementsUSDfor.push(mov
 
 
   const movementDescriptions = movements.map
-  (mov, i,) =>  {
-    'Movement ${ i + 1}: You ${mov > 0 ? 'deposited':
-    'withdrew'} ${Math.abs(
-      mov
-    )}';
+  //(mov, i,) =>  {
+   // 'Movement ${ i + 1}: You ${mov > 0 ? 'deposited':'withdrew'} ${Math.abs(  mov )}';
     
   
     console.log(movementsDescriptions);
@@ -478,9 +477,9 @@ console.log(max);
 
            // challenge - 2 //
 
-const calcAvergaeHumanAge = function (ages) {
-  const humanAges = ages.map(age => (age =< 2 ? 2 * 
-    age : 16 + age * 4));
+//const calcAvergaeHumanAge = function (ages) {
+  //const humanAges = ages.map(age => (age =< 2 ? 2 * 
+    //age : 16 + age * 4));
     const adults = humanAges.filter(age => age >= 18);
     console.log(humanAges);
     console.log(adults);
@@ -488,16 +487,16 @@ const calcAvergaeHumanAge = function (ages) {
     // const averge = adults.reduce((acc,age) => acc
     + age, // adults.length;
 
-      const avergae = adults.reduce(
+      //const avergae = adults.reduce(
         (acc, age, i, arr) => acc + age / arr.length,
         0
-      );
+      ;
 
       //2 3. (2+3</2 = 2.5 === 2/2+3/2 = 2.5
 
       return average ;
-};
-
+;
+/*
 const avg1 = calcAverageHumanAge ([5,2, 4, 1, 15, 8, 
   3]);
 const avg1 = calcAverageHumanAge ([16, 6, 10, 5, 6, 1,
@@ -547,19 +546,17 @@ const calcAvergaeHumanAge2 = function (ages) {
 
 const calcAvergaeHumanAge = ages => ages
 ages 
-.map(age => (age =< 2 ? 2 * 
-    age : 16 + age * 4));
-    .filter(age => age >= 18)
-    .reduce((acc, age, i, arr)=> acc + age / arr.
-  length, 0);
+//.map(age => (age =< 2 ? 2 * 
+   // age : 16 + age * 4));
+  //  .filter(age => age >= 18)
+   // .reduce((acc, age, i, arr)=> acc + age / arr.
+ // length, 0);
   // adult.length
 
 
 
-const avg1 = calcAverageHumanAge ([5,2, 4, 1, 15, 8, 
-  3]);
-const avg1 = calcAverageHumanAge ([16, 6, 10, 5, 6, 1,
-  4]);
+//const avg1 = calcAverageHumanAge ([5,2, 4, 1, 15, 8, 3]);
+//const avg1 = calcAverageHumanAge ([16, 6, 10, 5, 6, 1, 4]);
   console.log(avg1, avg2);
 
 
@@ -608,7 +605,7 @@ console.log(movement.some(deposit));
 console.log(movement.every(deposit));
 console.log(movement.filter(deposit));
 
-const arr = [[1, 2, 3], [4, 5, 6],7 8];
+//const arr = [[1, 2, 3], [4, 5, 6],7 8];
 console.log(arr.flat());
 
 const arrDeep = [[[1,2], 3], [4, [5,6]],7, 8];
@@ -763,8 +760,7 @@ const convertTitleCase = function(title) {
 
 
 
-// ****** challenge - 4 ******//
-
+// ****** challenge - 4 
 
 
 //  1 -

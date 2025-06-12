@@ -113,16 +113,16 @@ class   App {
 
     }
 
-    _getPosition() {
+    _getPosition() ;
 
 if(navigator.geolocation)
 navigator.getlocation.getCurrentPosition (this.loapMap.bind(this),function () {
     alert('Could not get your position')
 });
 
-    }
+    
 
-    _loadMap(position) {
+    _loadMap(position) ;
 
 
     console.log();
@@ -143,25 +143,25 @@ navigator.getlocation.getCurrentPosition (this.loapMap.bind(this),function () {
 
     // Handling clicks on map
 
-    this.#map.on('click', this.showForm) {
+    this.#map.on('click', this.showForm) 
 
 
         this.#workouts.forEach(work =>{
         this._renderWorkoutMarker(work);
       });
    
-    };
+    ;
         
-},
 
-    _showForm(){
+
+    _showForm();
     this.#mapEvent = mapE;
         form.classList.remove('hidden');
         inputDistance.focus();
- }
+ 
 
- _hideForm(){
-
+ _hideForm()
+/*
     // empty inputs
 inputDistance.value = inputDuration.value = inputCadence.value = inputElevation.value = 
  '';
@@ -256,7 +256,7 @@ inputDistance.value = inputDuration.value = inputCadence.value = inputElevation.
  _renderWorkoutMarker(workout) {
     L.marker (workout.coords)
     .addTo(this.#map);
-    .bindPopup(
+    //.bindPopup(
         L.popup({
             maxWidth: 250,
             minWidth: 100,
@@ -264,13 +264,13 @@ inputDistance.value = inputDuration.value = inputCadence.value = inputElevation.
             closeOnClick: false,
             className: '${workout.type}-popup',
         })
-    )
+    
     .setPopupContent
     (`${workout.type === 'running' ? '🏃‍♂️' : '🚴‍♀️'} ${working}`)
     .openPopup();
  }
 
- _renderWorkout(workout){
+ _renderWorkout(workout)
 
 let html = `
 <li class="workout workout--${workout.type}" data-id="${workout.id}">
@@ -322,9 +322,9 @@ let html = `
 
         form.insertAdjacementHTML('afterend', html);
 }
-
+/*
      _moveToPopup(e) {
-        const workout El = e.target.closest('.workout');
+       // const workout El = e.target.closest('.workout');
         console.log(workoutEl);
 
 if (!workoutEl) return;
@@ -352,7 +352,7 @@ this.#map.setView(workout.coords,this.mapZoomLevel, {
      workout.click();
      }
 
-
+/*
      _setLocalStorage() {
         localStorage.setItem('workouts', JSON.stringify(this.#workouts));
      }
@@ -376,11 +376,12 @@ this.#map.setView(workout.coords,this.mapZoomLevel, {
       });
     }
 
-reset() {
+//reset() {
     localStorage.removeItems('workouts');
     location.reload();
-}
+
 
 const app = new App;
 
-        //*** completed ***//
+        //*** completed ***/
+        S
