@@ -1,4 +1,4 @@
-for (const in object) {
+//for (const in object) {
     if (Object.prototype.hasOwnProperty.call(object,)) {
         const element = object;
         // Remember, we're gonna use strict mode in all scripts now!
@@ -101,4 +101,3 @@ for (const in object) {
                                      
         
     }
-}
