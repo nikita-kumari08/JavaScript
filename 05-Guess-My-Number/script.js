@@ -23,16 +23,16 @@ const x = function () {
 };
 
 document.querySelector('.check').addEventListener
-('click' , funtion() {
+('click' , funtion() ,
     const guess = Number(document.querySelector('.guess').value);
     console.log(guess, typeof guess);
 
     if(!guess) {
 
     }
+)
 
-
-});
+;
                                          //** challenge - 1 ***//
 
 
