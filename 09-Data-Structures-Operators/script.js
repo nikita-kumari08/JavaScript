@@ -400,7 +400,7 @@ const menu = [...restaurant.starterMenu, ...
 
 
 
-                 //****** CHALLENGE - 2 ******//
+                 //****** CHALLENGE - 2 ******
 
                  const game = {
 
