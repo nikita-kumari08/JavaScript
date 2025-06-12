@@ -58,7 +58,7 @@ console.log(max,min);
 return max - min;
 };
 
-const amplitudeNew = calcTempAmplitudeNew({3, 5, 1},[9, 0, 5]);
+const amplitudeNew = calcTempAmplitudeNew(351,9, 0, 5);
 console.log(amplitudeNew);
 
 
@@ -87,7 +87,7 @@ console.log('... ${data[0]} C ... ${data1[1]} C ... ${data1[2]} C ...');
 const printForecast = function(arr) {
     let str = '';
     for(let i = 0; i < arr.length; i++){
-        str += '${arr[i]} C' in ${i + 1} days ... ';
+        str += '${arr[i]} C' in ${i + 1} days ';
     }
     console.log('...' + str);
 };

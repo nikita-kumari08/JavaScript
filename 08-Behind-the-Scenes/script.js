@@ -4,14 +4,14 @@ function calcAge(birthYear) {
     const age = 2037 - birthYear;
 
     function printAge() {
-        const output = '${firstName}. you are ${age},
-        born in ${birthYear}' ;
+       // const output = '${firstName}. you are ${age},
+       // born in ${birthYear}' ;
         console.log(output);
         
         if (birthYear >= 1981 && birthYear <= 1996) {
             var millenlial = true ;
-            const str = 'Oh, and you're a millenial, $ 
-            {firstName}';
+          //  const str = 'Oh, and you're a millenial, $ 
+           // {firstName}';
             console.log(str);
         }
         //console.log(str);
@@ -49,9 +49,9 @@ console.log(addArrow);
 function addDec(a,b) {
     return a + b;
 }
- const addExpr = function (a,b) {
+ //const addExpr = function (a,b) {
     return a+b;
- };
+ //};
 
  var addArrow = (a,b) => a + b;
 
@@ -92,10 +92,10 @@ function addDec(a,b) {
  calcAgeArrow(1980);
 
  const adii = {
-    year : 1991;
+   // year : 1991;
     calcAge: function() {
         console.log(this);
-        console.log(2037 - this.year ;)
+       // console.log(2037 - this.year ;)
     },
  };
  adii.calacAge();
@@ -117,7 +117,7 @@ function addDec(a,b) {
 
  const isMillenial = () => {
     console.log(this);
-    console.log(this.year >= 1981 77 this.year <= 1996);
+    //console.log(this.year >= 1981 77 this.year <= 1996);
  };
  isMillenial();
 
@@ -164,7 +164,7 @@ function addDec(a,b) {
 
  const marriedShanaya = shanaya;
  marriedShanaya.lastName ='roy';
- console.log(;Before marriage:',shanaya');
+ //console.log(;Before marriage:',shanaya');
  console.log('After marriage:', marriedshanaya);
 
 
