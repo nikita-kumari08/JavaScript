@@ -498,4 +498,4 @@ console.log(calcAverage(totals));
 console.log(calcAverage(tips));
 
 
-                        
+                        //**** FUNDAMENTAL PART - 2 COMPLETED  ****//
