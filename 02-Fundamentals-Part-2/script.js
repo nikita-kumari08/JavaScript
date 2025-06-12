@@ -25,7 +25,7 @@ logger();
 
 function fruitProcessor(apples,oranges) {
     console.log(apples , oranges);
-    const juice = 'Juice with ${apples} apples and ${oranges}' oranges;
+   // const juice = 'Juice with ${apples} apples and ${oranges}' oranges;
     return juice ;
 }
 
@@ -38,7 +38,7 @@ console.log(appleOrange.juice);
 
 //**** Functions Declearation ****//
 
-const age1 = calcAge1(2004);
+//const age1 = calcAge1(2004);
 
 function calcAge1(birthYear){
     return 2025 - birthYear
@@ -49,7 +49,7 @@ function calcAge1(birthYear){
 const calcAge2 = function (birthYear){
     return 2025 - birthYear 
 }
-const age2 = calcAge2(2004);
+//const age2 = calcAge2(2004);
 console.log(age1, age2);
 
 
@@ -58,15 +58,15 @@ console.log(age1, age2);
 
 
 const calAge3 = birthYear => 2025 - birthYear;
-const age3 = calcAge3(2025);
+//const age3 = calcAge3(2025);
 console.log(age3);
 
-const yearsUntilRetirement = (birthYear , firstName) => {
-    const age = 2025 - birthYear ;
+//const yearsUntilRetirement = (birthYear , firstName) => {
+    //const age = 2025 - birthYear ;
     const retirement = 65 - age;
     // return retirement ;
     return'$(firstName) retires in ${retirement} years ';
-}
+//}
 
 console.log(yearsUntilRetirement(2005 , 'Shanaya'));
 console.log(yearsUntilRetirement(2004, 'adii'));
@@ -90,9 +90,9 @@ console.log(fruitProcessor(2,3));
 
 //****REVIEWING FUNCTIONS****//
 
-const calcAge = function(birthYear) {
+//const calcAge = function(birthYear) {
     return 2025 - birthYear;
-}
+//}
 
 const yearsUntilRetirement = function(birthYear, firstName) {
     const age = calcAge(birthYear);
@@ -111,7 +111,7 @@ yearsUntilRetirement(2000, 'adii');
 
 //**** Challenge - 1 ****//
 
-const calcAverage = (a, b, c) => (a + b + c) / 3;
+//const calcAverage = (a, b, c) => (a + b + c) / 3;
 console.log(calcAverage(3, 4, 5));
 
 //***  Test 1 ***//
@@ -151,10 +151,10 @@ const friend1 = 'adii';
 const friend2 = 'cutu';
 const friend3 = 'shanaya';  //More actions
 
-const friends = [adii', 'cutu', 'shanaya'];
+//const friends = [adii', 'cutu', 'shanaya'];
 console.log(friends);
 
-const years = new Array(1996, 2001, 2005);
+//const years = new Array(1996, 2001, 2005);
 console.log(years);
 
 console.log(friends.length);
@@ -165,7 +165,7 @@ console.log(friends)
 
 const firstName = 'cutu';
 const shanaya = [firstName, 'kokiee', 2025-2005, 'Student', friends ];
-console.log(shanaya).length);
+console.log(shanaya).length;
 
 
 //*** Exercise ***//
@@ -200,7 +200,7 @@ console.log(friends);
 
 //**** Remove elements ****//
 
-
+/*
 friends.pop(); //last
 const popped = friends.pop();
 console.log(popped);
@@ -219,17 +219,17 @@ if (friends.includes('pokkie')) {
 }
 
 
-//**** Challenge - 2 ****//  
+//**** Challenge - 2 ****/ 
 
 
-const calcTip = function (bill) {
+//const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
+//}
 // const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
-const bills = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+//const bills = [125, 555, 44];
+//const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+//const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips, totals);
 
@@ -498,4 +498,4 @@ console.log(calcAverage(totals));
 console.log(calcAverage(tips));
 
 
-                        //**** FUNDAMENTAL PART - 2 COMPLETED  ****//
+                        
