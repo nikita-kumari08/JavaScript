@@ -280,7 +280,7 @@ console.log(arr.slice(1 , -2));
 console.log(arr.slice());
 console.log([...arr]);
 
-//*** Splice  ***//
+//*** Splice  ***
 
 
 // console.log(arr.splice(2));
@@ -322,7 +322,7 @@ console.log(arr.slice(-1)[0]);
 console.log(arr.at(-1));
 console.log('adii'.at(-1));
 
-  //***  Looping array **//
+  //***  Looping array **
 
 //const movement = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
@@ -332,17 +332,17 @@ console.log('adii'.at(-1));
   //} else {
     //console.log('Movement ${i + 1}: You withdrew $ {Math.abs(movement)}');
 
-};
+//};
 
 
 console.log(' ----FOREACH ----')
-movements.forEach(function(mov , i , arr) 
+//movements.forEach(function(mov , i , arr) 
 //if (mov > 0) {
     //console.log('Movement ${ i + 1}: You deposited ${mov}');
   //} else {
     //console.log('Movement ${ i + 1}: You withdrew $ {Math.abs(mov)}');
  // }
-);
+//);
 
 
 // 0: function (200)
@@ -854,7 +854,7 @@ dogs.forEach(dog => (dog.recFood = Math.trunc(dog.
 
 
 
-   /////// **** completed ****////
+   /////// **** completed ****////)
 
 
 
@@ -871,4 +871,4 @@ dogs.forEach(dog => (dog.recFood = Math.trunc(dog.
 
 
 
-
+  
