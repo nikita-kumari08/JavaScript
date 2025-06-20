@@ -86,4 +86,3 @@ If you have suggestions, ideas, or want to collaborate on mini-projects, feel fr
 
 ---
 
-Thanks for visiting 🌟
