@@ -11,7 +11,7 @@ Hi! I'm **Nikita Kumari**, a B.Tech student at **UCET Hazaribagh (ECE branch)**,
 I’m currently learning:
 - 📌 **Java + DSA** (GeeksforGeeks, Self-paced)
 - 🌐 **Web Development** (HTML, CSS, JavaScript, React)
-- ⚙️ **Backend Development** (Node.js, Express, MongoDB – in progress)
+- ⚙️ **Backend Development** (Node.js, Express, MongoDB )
 
 This repo is part of my self-learning journey and preparation for **internships, hackathons, and off-campus placements** by my 6th semester.
 
