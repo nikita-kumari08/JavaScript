@@ -4,7 +4,7 @@ Welcome to my **JavaScript learning repository**! This is where I’m building m
 
 ---
 
-## 👩‍💻 About 
+## 👩‍💻 About Me
 
 Hi! I'm **Nikita Kumari**, a B.Tech student at **UCET Hazaribagh (ECE branch)**, graduating in **2028**. While my background is in Electronics and communication Engineering, I’m deeply passionate about **software development** and actively transitioning into the tech world.
 
