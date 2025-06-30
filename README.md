@@ -2,7 +2,7 @@
 
 Welcome to my **JavaScript learning repository**! This is where I’m building my foundation in JavaScript—from basic syntax to advanced concepts—through structured examples, real-world snippets, and focused practice.
 
---- complet
+--- comple
 
 ## 👩‍💻 About Me
 
