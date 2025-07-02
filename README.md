@@ -71,7 +71,7 @@ Each folder represents a learning module, and the JS files inside contain explai
 
 ## 🌐 Connect with Me
 
-- 💻 GitHub: [nikita-kumari08](https://github.com/nikita-kumari08)
+- 💻 GitHub: [nikita-kumari08](https://github.com/nikitakumari-08)
 - ✉️ Open to: Internships, collaborations, and tech communities!
 
 ---
