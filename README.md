@@ -53,7 +53,6 @@ Each folder represents a learning module, and the JS files inside contain explai
 - ✅ Strengthen problem-solving for interviews
 - ✅ Build real-world projects using JS & frameworks
 
----
 
 ## 🛠️ Tech Stack
 
