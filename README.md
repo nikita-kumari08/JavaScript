@@ -44,7 +44,6 @@ This repo is part of my self-learning journey and preparation for **internships,
 
 Each folder represents a learning module, and the JS files inside contain explained examples, practice problems, and notes.
 
----
 
 ## 🎯 Learning Goals
 
