@@ -72,7 +72,6 @@ Each folder represents a learning module, and the JS files inside contain explai
 
 If you have suggestions, ideas, or want to collaborate on mini-projects, feel free to reach out or open an issue. I'm always excited to grow and learn with others in the developer community.
 
----
 
 > **"Learning to code isn’t just about syntax. It’s about solving problems, creating value, and building the future—one line at a time."**
 
