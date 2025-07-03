@@ -63,7 +63,6 @@ Each folder represents a learning module, and the JS files inside contain explai
 - Tools: **VS Code**, **Node.js**, **Git**
 - Platform: **GitHub**, **Replit**, **CodeSandbox**
 
----
 
 ## 🌐 Connect with Me
 
