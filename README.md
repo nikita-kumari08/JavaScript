@@ -15,7 +15,6 @@ I’m currently learning:
 
 This repo is part of my self-learning journey and preparation for **internships, hackathons, and off-campus placements** by my 6th semester.
 
----
 
 ## 📁 Repository Structure
 
